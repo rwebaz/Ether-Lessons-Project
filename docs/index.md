@@ -96,6 +96,6 @@ Therefore, it is the policy of the **[MMINAIL][1]** to always provide a **Ping B
 
 ### External Sources
 
-- [Project Source Links](https://rwebaz.github.io/Medcoin-Crypto-Currency-Project/pages/Source-Links.html){:title="Click to Visit the Source Links page for the Medcoin™ Crypto Currency Project"}{:target="_blank"}. Published by © 2017 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
+- [Project Source Links](https://rwebaz.github.io/Ether-Lessons-Project/pages/Source-Links.html){:title="Click to Visit the Source Links page for the Ether Lessons Project"}{:target="_blank"}. Published by © 2017 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
 
 **Note**. Please support the authors and publishers who aggregate the **Source Links** for our projects.
