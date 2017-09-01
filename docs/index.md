@@ -18,6 +18,12 @@ Place the introducing line of text ie.) the 'tagline' here ...
 
 ## Issue
 
+The **Issue** of a successful legal argument is prefaced by a concise, to the point coin flip.
+
+Should it be, or should it not?
+
+### The Socratic Method
+
 State the issue of the problem in the form of a question ie.) How do you code this stuff?
 
 ## Rule
