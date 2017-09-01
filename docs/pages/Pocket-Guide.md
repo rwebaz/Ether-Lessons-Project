@@ -17,17 +17,17 @@ This simple beginner’s guide is to help those just coming to **Ethereum** for 
 
 1. The **Ethereum** platform empowers humans to form safe and secure digital agreements with each other.
 
-1.  The **Ethereum** platform allows people to truly own and control their own money.
+1. The **Ethereum** platform allows people to truly own and control their own money.
 
-1.  The **Ethereum** platform allows people to protect their internet money from corruption.
+1. The **Ethereum** platform allows people to protect their internet money from corruption.
 
-1.  The **Ethereum** platform allows people to better harness the elegant and incredible nature of cryptography.
+1. The **Ethereum** platform allows people to better harness the elegant and incredible nature of cryptography.
 
-1.  The **Ethereum** platform will change everything.
+1. The **Ethereum** platform will change everything.
 
-1.  The **Ethereum** platform will change the way we build things.
+1. The **Ethereum** platform will change the way we build things.
 
-1.  The **Ethereum** platform will change the way we create, communicate, and control our own futures.
+1. The **Ethereum** platform will change the way we create, communicate, and control our own futures.
 
 Therefore, do NOT be afraid of **Ethereum**.
 
@@ -67,25 +67,13 @@ To send a transaction over the **Ethereum** platform, the transactor and transac
 
 Commonly known as "Contract Gas", the **Ether** agreed upon will be credited to the **Miner** who successfully forges the block that completes your transaction.
 
-Generally, the more "Contract Gas" you include in your transaction, the faster your transaction will be processed.
+Generally, the more **Contract Gas** you include in your transaction, the faster your transaction will be processed.
 
 Does that sound fair?
 
-## Token Silence
+## Digital Wallets
 
-a) Use a hardware wallet like Ledger S Nano or Trezor
-
-Remember to properly backup all keys and seeds like your life depends on it.
-
-b) Don’t keep large amount of Ether or Tokens on Exchanges or third-party services.
-
-c) Don’t send or store Ether or tokens in anything you don’t fully understand (most ICO’s are BS)
-
-d) Remember: you are your own bank, accountant, security team and analyst.
-
-This means it’s all up to you to make the right choices and secure your money.
-
-## MyEtherWallet.com
+An **Ether** wallet comes in many flavors.
 
 Only use Ethereum on safe/fresh/clean and up-to-date secured computers.
 
@@ -109,7 +97,9 @@ e) Join the community, ask questions, stay very skeptical of everything, and don
 
 f) There are thousands of spam, spoofing, hacking and unsafe services and contracts trying to steal your precious Ether.
 
-Ask community leaders and experts for opinions, and trusted options or about services/websites you’re unsure about, don’t ever be shy, in most cases try to use what everyone else is using and what the community is comfortable with.
+Ask community leaders and experts for opinions, and trusted options or about services/websites you’re unsure about.
+
+Don’t ever be shy, in most cases try to use what everyone else is using and what the community is comfortable with.
 
 g) Once you send Ether or Tokens, think of it as a final sale transaction.
 
@@ -127,7 +117,7 @@ Don’t get comfortable, keep probing the space for new ideas, practices and way
 
 To get you familiar with some basic concepts fast, here are some basics.
 
-Blockchain and Miners:
+## Blockchain and Miners
 
 When transactions are sent, they get bunched up into blocks one after the other, we call this bunching of transactions into blocks the “Blockchain”.
 
@@ -137,11 +127,13 @@ Blocks are created one after the other by transaction verifiers called Miners (l
 
 Miners can get rewards for processing transactions.
 
-Both Ethereum and Bitcoin have their own blockchains (note: they are very different technically, but conceptually alike in some ways).
+**Note**. Both the **Ethereum** platform and the **Bitcoin** platform have their own type of block chains.
 
-Accounts and Keys:
+Different technically, but conceptually alike somewhat in many ways, though every day the divergence between the **Ethereum** platform and the **Bitcoin** platform grows exponentially.
 
-If you want to send or receive Ether or Tokens on Ethereum ...
+## Accounts and Keys
+
+If you want to send or receive either **Ether** or real Tokens on the Ethereum platform ...
 
 You will need an account.
 
@@ -209,7 +201,7 @@ Compare and check all details at least twice, or maybe even three times to avoid
 
 ## Wei
 
-The base unit of an **Ether** crypto coin is called a Wei aka Wei Dai.
+The base unit of an **Ether** crypto coin is called a *Wei* aka *Wei Dai*.
 
 There are eighteen (18) decimal places of Wei in a single **Ether** coin.
 
@@ -227,13 +219,13 @@ More to come ...
 
 More to come ...
 
-Tokens can be denominated in all different kinds of units.
+Real Tokens can be denominated in all different kinds of units.
 
-Some tokens have no decimal places (i.e. 1 token is always 1 token)
+Some real Tokens have no decimal places ie.) One (1) real Token is always One (1) real Token
 
-While other Tokens can have denominations and decimal places similar to Ether (e.g. 1 token = 18 decimal places of tokens).
+While other real Tokens can have denominations and decimal places similar to **Ether** ie.) One (1) real Token = Eighteen (18) decimal places of Token ...
 
-When sending Tokens, you will generally not need to send any “value” of **Ether**.
+When sending real Tokens, you will generally not need to send any “value” of **Ether**.
 
 However, you will be required to pay a small amount of **Ether** for gas in order to send the transaction and to pay the Miner.
 
@@ -260,13 +252,15 @@ The **Ethereum** platform takes the contract code and executes its functions by 
 
 **Note**. Other **Ethereum** platform **Smart Contracts** as well as the owners of other **Ethereum** platform accounts may call the methods of your creation to calculate and render a different result by passing in different variables.
 
-Test Nets and Networks:
+## Test Nets
 
-Ethereum has multiple sub-networks, we call these “test networks”.
+The **Ethereum** platform has many, multiple sub-networks.
+
+We call these sub-networks “test networks”, or **Test Nets** for short.
 
 Developers use these networks to test and build live contracts and services on the internet before going to the main network.
 
-The main Ethereum network is called the “Main-net”.
+The main **Ethereum** platform network is called the *Main Net*.
 
 While the most common test networks are called:
 
@@ -275,6 +269,8 @@ While the most common test networks are called:
 “Rinkeby”, and
 
 “Kovan”.
+
+### Faucet Coins
 
 The fake **Ether** and fake Tokens used on test networks are generally worthless.
 
@@ -286,7 +282,9 @@ This is where developers and users can get free test **Ether** to be used for th
 
 When using **Ethereum** platform wallets like "Meta Mask" ...
 
-Remember to be on the right network ( usually the Main-net Ethereum Network ).
+Remember to be on a test network when testing your programs.
+
+**Note**. When executing **Smart Contracts** LIVE, you will be on the **Main Net** of the **Ethereum** platform.
 
 ## Blockchain Explorer
 
@@ -314,35 +312,57 @@ b) a person or service sending it to you,
 
 c) mining it with very expensive and powerful computers.
 
-Get Started:
+## Getting Started
 
-To start fooling around, try MyEtherWallet to create, backup and use your first Ethereum wallet (huzza!):
+To start tooling around the Ethereum platform, try **MyEtherWallet** to create, backup and use your first **Ethereum** platform wallet (huzza!):
 
-C=> https://www.myetherwallet.com
+C=> [MyEtherWallet](https://www.myetherwallet.com){:title="Click to Visit the ..."}{:target="_blank"}
 
-Then install MetaMask in your Chrome browser.
+Then install **MetaMask** in your Chrome browser in order to enable your browser with the **Ethereum** platform and the new *Web 3.0 Internet*.
 
-To enable your browser with Ethereum and the new internet, it is also an Ethereum wallet =D
+**MetaMask** is also an **Ethereum** wallet that can be used on the **Ethereum** platform.
 
-C=> https://metamask.io
+C=> [MetaMask](https://metamask.io){:title="Click to Visit the ..."}{:target="_blank"}
 
-Note, Ledger S Nano and Trezor both have their own softwares for managing Ether and Assets.
+And, can also be used with the above **MyEtherWallet**, among other options.
 
-And, can also be used with MyEtherWallet, among other options.
+## Author Caveats
 
-Remember, this article could be hacked, so don’t trust the links above with any real Ether or Tokens.
+Please always remember, articles can be hacked, too!
 
-Always double check links with other sources (see what i did there ;-)
+So, please watch where the links you click ultimately go.
 
-This beginners guide is the start of a larger wallet handling git book that will be coming out sometime after this article.
+And, only trust your real **Ether** or real Tokens to your "hard" wallet, or "paper" wallet.
 
-The book will outline detailed wallet setup instructions, options, tips and tricks to handling Ether and digital assets.
+Your "soft" wallet should only be used to transact business over the Ethereum platform ...
 
-It will get complex, which is why beginners guides and primers like this are so important.
+NOT as a permanent place of storage for oodles of **Ether**.
 
-A special thanks to all those who provided feedback and helped out with this and other articles.
+Always double check the links that you click on with other sources.
 
-Disclaimer:
+( as I have done here ;-)
+
+### Token Silence
+
+Also use a hardware wallet like **Ledger S Nano** or **Trezor**
+
+- Remember to always properly backup all keys and seeds like your life depends on it
+
+- Do NOT keep large amounts of **Ether** or real Tokens on ANY exchanges or 3rd party service
+
+- Do NOT send or store **Ether** or real Tokens in anything you don’t fully understand
+
+- **Note**. Most *Initial Coin Offerings*, or **ICO** are politely ... BS!
+
+- Remember: you are your own bank, accountant, security team and analyst!
+
+- Be diligent with the **ICOs** you encounter out there in the wild.
+
+- This means it’s all up to you to make the right choices and to secure your money!
+
+**Note**, **Ledger S Nano** and **Trezor** all have their own softwares for managing **Ether** and their other assets.
+
+### Disclaimer
 
 None of what is stated, mentioned or described in this article is in any way investment advice and should not be treated as such.
 
@@ -356,7 +376,17 @@ I hope that in writing this guide you will learn more about the technology of th
 
 And, have great success as a user of this new form of technology.
 
-### Nick Dodson, Crypto developer and musician.
+### Beginner Guide
+
+This beginners guide is the start of a larger wallet handling git book that will be coming out sometime after this article.
+
+The book will outline detailed wallet setup instructions, options, tips and tricks to handling Ether and digital assets.
+
+It will get complex, which is why beginners guides and primers like this are so important.
+
+A special thanks to all those who provided feedback and helped out with this and other articles.
+
+### Nick Dodson, Crypto developer and musician
 
 ```liquid
 {% raw %}
@@ -392,7 +422,7 @@ Therefore, it is the policy of the **[MMINAIL][1]** to always provide a **Ping B
 ### The Ethereum Community
 
 - [Ethereum Forum](https://forum.ethereum.org){:title="Click to Visit the ..."}{:target="_blank"}.
-- (Ethereum Creator: Vitalik Buterin)(https://twitter.com/VitalikButerin){:title="Click to Visit the ..."}{:target="_blank"}.
+- [Ethereum Creator: Vitalik Buterin](https://twitter.com/VitalikButerin){:title="Click to Visit the ..."}{:target="_blank"}.
 - [Ethereum Foundation](https://twitter.com/ethereumproject){:title="Click to Visit the ..."}{:target="_blank"}.
 - [Ethereum News](https://twitter.com/ETHNews_){:title="Click to Visit the ..."}{:target="_blank"}.
 
