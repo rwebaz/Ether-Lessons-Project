@@ -401,23 +401,11 @@ A special thanks to all those who provided feedback and helped out with this and
 
 - [Nick Dodson, Author](https://mobile.twitter.com/IAmNickDodson){:title="Click to Visit the ..."}{:target="_blank"}.
 
-## Sources and Uses
-
-The source and use of 3rd party materials in the creation of this **Markdown** page is greatly appreciated.
-
-Most authors and publishers will allow for the abbreviated reproduction of their works in part when the case of brief quotations or ideas embodied in critical articles or reviews becomes necessary to further the understanding of the end-user's learning process.
-
-Indeed, ping-backs to the original sources are welcome by the readers, the authors, and the publishers of instructional hard copies.
-
-Therefore, it is the policy of the **[MMINAIL][1]** to always provide a **Ping Back** to the original author, or to the publisher of the original publication when citing 3rd party work.
-
-### Inline References
-
-1. [MMINAIL](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}. The MMINAIL is an acronym for the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation. Published by © 2017 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
+{% include sources-and-uses-md.htm %}
 
 ### External Sources
 
-- [Project Source Links](https://rwebaz.github.io/Medcoin-Crypto-Currency-Project/pages/Source-Links.html){:title="Click to Visit the Medcoin™ Crypto Currency Project Source Links Page"}{:target="_blank"). Published by © 2017 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
+- The [Project Source Links](https://mminail.github.io/Ether/Source-Ether-Links.htm){:title="Click to Visit the Source Links page of the Ether Lessons Project at GitHub pages"}{:target="_blank"}. Published by © 2017 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
 
 ### The Ethereum Community
 
@@ -453,5 +441,3 @@ Therefore, it is the policy of the **[MMINAIL][1]** to always provide a **Ping B
 - [Troll Zone](https://reddit.com/r/Ethereum){:title="Click to Visit the ..."}{:target="_blank"}.
 - [Troll Zone for Traders](https://reddit.com/r/EthTrader){:title="Click to Visit the ..."}{:target="_blank"}.
 - [Troll Zone for Developers](https://reddit.com/r/EthDev){:title="Click to Visit the ..."}{:target="_blank"}.
-
-**Note**. Please support the authors and publishers who aggregate the **Source Links** for our projects.
