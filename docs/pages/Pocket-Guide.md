@@ -7,7 +7,7 @@ navigation_weight: 9
 
 A simple **Ethereum** pocket guide for new comers, novice users, and traders.
 
-{% include md-toc-flammarion.htm %}
+{% include toc-flammarion.md %}
 
 ## The Ethereum Platform
 
@@ -401,7 +401,7 @@ A special thanks to all those who provided feedback and helped out with this and
 
 - [Nick Dodson, Author](https://mobile.twitter.com/IAmNickDodson){:title="Click to Visit the ..."}{:target="_blank"}.
 
-{% include sources-and-uses-md.htm %}
+{% include sources-and-uses.md %}
 
 ### External Sources
 

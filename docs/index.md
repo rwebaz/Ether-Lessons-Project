@@ -5,7 +5,7 @@ navigation_weight: 1
 ---
 # Ether Lessons Project Home Page
 
-Place the introducing line of text ie.) the 'tagline' here ...
+{{ site.tagline }}
 
 ## Table O Contents
 
@@ -68,16 +68,12 @@ Delineate the steps ...
 
 Expound the solution ...
 
-### Tagline
-
-{{ site.tagline }}
-
 ### Description
 
 {{ site.description }}
 
-{% include sources-and-uses-md.htm %}
+{% include sources-and-uses.md %}
 
 ### External Sources
 
-- The [Project Source Links](https://mminail.github.io/Ether/Source-Ether-Links.htm){:title="Click to Visit the Source Links page of the Ether Lessons Project at GitHub pages"}{:target="_blank"}. Published by © 2017 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
+- The [Project Source Links](https://mminail.github.io/Ether/Source-Ether-Links.htm){:title="Click to Visit the Source Links page of the Ether Lessons Project at GitHub pages"}{:target="_blank"} page of the Ether Lessons Project. Published by © 2017 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
