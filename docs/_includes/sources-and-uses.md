@@ -1,4 +1,8 @@
-## Raw Code
+## Raw Code and Anchors
+
+Place the introducing line of text ie.) the 'tagline' here ...
+
+### Raw Code
 
 Place the introducing line of text ie.) the 'tagline' here ...
 
@@ -18,6 +22,10 @@ By clicking on either the red [1] above, or the red [MMINAIL] ...
 {:.red}
 
 The reader will be hyperlinked to the bottom of the page directly to the referenced citation.
+
+### Description
+
+{{ site.description }}
 
 ## Sources and Uses
 
