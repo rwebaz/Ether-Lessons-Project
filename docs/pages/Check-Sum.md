@@ -7,7 +7,7 @@ navigation_weight: 9
 
 Affirming a download via **Check Sum** is a smart move.
 
-{% include md-toc-flammarion.htm %}
+{% include toc-flammarion.md %}
 
 ## Hash v Hash
 
@@ -91,8 +91,8 @@ Alternatively, you can also just download the Ethereum "soft" wallet from the ma
 
 The installer program ( .dmg ) will check the sum of the program downloaded to make sure it has not been hacked in transit in the open.
 
-{% include sources-and-uses-md.htm %}
+{% include sources-and-uses.md %}
 
 ### External Sources
 
-- The [Project Source Links](https://mminail.github.io/Ether/Source-Ether-Links.htm){:title="Click to Visit the Source Links page of the Ether Lessons Project at GitHub pages"}{:target="_blank"}. Published by © 2017 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
+- The [Project Source Links](https://mminail.github.io/Ether/Source-Ether-Links.htm){:title="Click to Visit the Source Links page of the Ether Lessons Project at GitHub pages"}{:target="_blank"} page of the Ether Lessons Project. Published by © 2017 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.

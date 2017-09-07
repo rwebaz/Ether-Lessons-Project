@@ -7,7 +7,7 @@ navigation_weight: 9
 
 Both **Proof-O-Work** and **Proof-O-Stack** are dynastic models eligible for severe corruption of the masses, if not the classes.
 
-{% include md-toc-flammarion.htm %}
+{% include toc-flammarion.md %}
 
 ## The Extra Board
 
@@ -95,7 +95,7 @@ Ambitious, corrupted, or simply deluded citizens who devote themselves to our fa
 
 Watch, therefore, for those who gild themselves with the appearance of a virtuous sense of obligation, via a commendable deference for public opinion, who with a laudable zeal for public good, defraud the base with foolish compliances of ambition, corruption, or infatuation.
 
-{% include sources-and-uses-md.htm %}
+{% include sources-and-uses.md %}
 
 ### External Sources
 
