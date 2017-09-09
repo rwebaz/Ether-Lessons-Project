@@ -38,6 +38,6 @@ contract EtherOne {
 
       // Add amount to recipient
       balanceOf[_to] += _value;
-    {
+    }
   // End of contract EtherOne
 }

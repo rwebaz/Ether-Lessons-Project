@@ -82,8 +82,9 @@ contract token {
 
   // The name of the contract and the name of the constructor function should match
 
-  /* declare a constructor function token of parameter initialSupply of unsigned integer 256,
-     and tokenName of type string, and decimalUnits of unsigned integer 8, and tokenSymbol of type string */
+  /* declare a constructor function token of parameter initialSupply of
+     unsigned integer 256, and tokenName of type string,
+     and decimalUnits of unsigned integer 8, and tokenSymbol of type string */
 
     function token(uint256 initialSupply, string tokenName, uint8 decimalUnits, string tokenSymbol) {
       // Assign the declared variable initialSupply to the balance of the message sender
@@ -127,12 +128,12 @@ contract token {
       Transfer(_from, _to, _value);
     }
     
-  /// @notice Send `_value` tokens to `to` from your account
+  /// @notice Send `_value` tokens to `_to` from your account
   /// @param _to The address of the recipient
   /// @param _value The amount to send
 
-  /* declare a function of keyword 'transfer',
-     and parameter '_to' of type address y '_value' of unsigned integer 256 */
+  /* declare a function of keyword 'transfer' of parameter '_to' of type address,
+     and, '_value' of unsigned integer 256 */
 
     function transfer(address _to, uint256 _value) {
       // Use the internal form of transfer
@@ -237,6 +238,7 @@ contract token {
 }
 
 // The parent contracts are owned and token.
+
 // Therefore, the contract Medcoin inherits the properties of the owned, token contracts via the keyword `is`
 
 // Establish the Advanced Token
