@@ -3,123 +3,210 @@ pragma solidity ^0.4.0;
    We do not fix the exact version of the compiler from versions ^0.4.0 to 0.5.0,
    So that bug fix releases are still possible */
 
-// Establish a Copy n Paste crypto contract
-contract EtherTwo {
+// Establish the Token Recipient
+contract tokenRecipient {
 
+  /* declare a function receiveApproval of parameter 'from' of type address,
+     and 'value' of unsigned integer 256,
+     and 'token' of type address,
+     and extraData of type bytes */
 
-
-
-
-
-
-
-  // End of contract EtherTwo
+  // An unsigned integer of 256 bits = 32 bytes
+     
+  function receiveApproval(address _from, _uint256 value, _address token, bytes _extraData) {
+    // A gutless function
+  }
+  // End of contract tokenRecipient
 }
 
+// Establish the Token
+contract MyToken {
+  // declare a public 'name' variable of type string
+  string public name;
 
+  // declare a public 'symbol' variable of type string
+  string public symbol;
 
+  // declare a public 'decimals' variable of type uint8
+  uint8 public decimals;
 
+  // declare a public 'totalSupply' variable of type uint256
+  uint256 public totalSupply;
 
+  // Map an array for all balances
 
+  /* declare a mapping of parameter 'address => unit256',
+  and modifier public, and method 'balanceOf' */
+  
+  mapping (address => uint256) public balanceOf;
 
+  /* declare a mapping of parameter 'address => mapping',
+  and parameter 'address => unit256',
+  and modifier public, and method 'allowance' */
 
+  mapping (address => mapping (address => uint256)) public allowance;
 
+  // generate a public event on the block chain that will notify clients
 
+  // declare the event Transfer FBO Ethereum Wallet
+  event Transfer(address indexed from, address indexed to, uint256 value);
 
+  // declare the event Burn to notify clients about the amount burnt
+  event Burn(address indexed from, uint256 value);
 
+  // The name of the contract and the name of the constructor function should match
 
+  /* declare a constructor function MyToken of parameter initialSupply of
+     unsigned integer 256, and tokenName of type string,
+     and decimalUnits of unsigned integer 8, and tokenSymbol of type string */
 
+    function MyToken(uint256 initialSupply, string tokenName, uint8 decimalUnits, string tokenSymbol) {
+      // Assign the declared variable initialSupply to the balance of the message sender
+      balanceOf[msg.sender] = initialSupply;
 
+      // Assign the declared variable initialSupply to the declared variable totalSupply
+      totalSupply = initialSupply;
 
+      // Assign the declared variable tokenName to the previously declared variable name
+      name = tokenName;
 
+      // Assign the declared variable tokenSymbol to the previously declared variable symbol
+      symbol = tokenSymbol;
 
+      // Assign the declared variable decimalUnits to the previously declared variable decimals
+      decimals = decimalUnits;
+    }
 
+    // Call by internal transfer only under this contract
 
+  /* declare an internal function of keyword '_transfer',
+     and parameter 'address _from' and 'address _to' and  'uint _value', and modifier 'internal' */
 
+    function _transfer(address _from, address _to, uint _value) internal {
+      // Prevent any attempted trf to an address that starts with `0x0`
+      require (_to != 0x0);
 
+      // Check message sender current balance
+      require (balanceOf[_from] > _value);
 
-===============================================================================
+      // Check for recipient overflow
+      require (balanceOf[_to] + _value > balanceOf[_to]);
 
-/* How to declare a stand alone 'dataStore' variable
-   of unsigned integer of 256 bits = 32 bytes
-   Hint: use 'camelCase' for the name of the variable */
+      // Subtract amount from sender
+      balanceOf[_from] -= _value;
 
-    uint256 dataStore;
+      // Add amount to recipient
+      balanceOf[_to] += _value;
 
-/* How to declare a function of keyword 'set',
-   and parameter "x" of unsigned integer;
+      // Is there anyone listening to this transfer event
+      Transfer(_from, _to, _value);
+    }
 
-  function set(uint x) {
-  	// Assign the stand alone declared variable 'dataStore' to the value of `x`
-		x = dataStore;
-  }
+  /// @notice Send `_value` tokens to `_to` from your account
+  /// @param _to The address of the recipient
+  /// @param _value The amount to send
 
-/* How to declare a function of keyword 'get',
-   and parameter (), and modifier constant,
-   and modifier returns of parameter unsigned integer */
+  /* declare a function of keyword 'transfer' of parameter '_to' of type address,
+     and, '_value' of unsigned integer 256 */
 
-	function get() constant returns (uint) {
-		// return the value of the variable dataStore
-		return dataStore;
-	}
+    function transfer(address _to, uint256 _value) {
+      // Use the internal form of transfer
+      _transfer(msg.sender, _to, _value);
+    }
 
-/* How to declare a function of keyword 'set',
-   and parameter () */
+  /// @notice Send `_value` tokens to `_to` in behalf of `_from`
+  /// @param _from The address of the sender
+  /// @param _to The address of the recipient
+  /// @param _value The amount to send
 
-  function set() {
-    // declare a public 'central-minter' of type address
-    address public central-minter;
+  /* declare a function transferFrom of parameter '_from' of type address,
+     and '_to' of type address, and '_value' of unsigned integer 256,
+     and modifier returns with parameter success of type bool */
 
-    // assign the value to the variable coinStore
-	  coinStore = 100000000;
+    function transferFrom(address _from, address _to, uint256 _value) returns (bool success) {
+      // Check allowance
+      require(_value < allowance[_from][msg.sender]);
 
-    // assign the value to the variable decimals
-    decimals = 9;
+      allowance[_from][msg.sender] -= _value;
+      _transfer(_from, _to, _value);
+      return true;
+    }
 
-    // assign the value central-minter to the variable owner on condition
-    if(central-minter != 0) owner = central-minter;
-  }
+  /// @notice Allows `_spender` to spend no more than `_value` tokens in your behalf
+  /// @param _spender The address authorized to spend
+  /// @param _value The max amount they can spend
 
-==================================================================================
+  /* declare a function approve of parameter '_spender' of type address,
+     and '_value' of unsigned integer 256,
+     and modifier returns with parameter success of type bool */
 
-/* declare a function mintToken of parameters 'target' of type address,
-   and 'mintedAmount' of unsigned integer,
-   and modifier 'onlyOwner' */
+    function(address _spender, uint256 _value) returns (bool success) {
+      allowance[msg.sender][_spender] = _value;
+      return true;
+    }
 
-  function mintToken(address target, uint mintedAmount) onlyOwner {
-    balanceOf[target] += mintedAmount;
-    Transfer(0, owner, mintedAmount);
-    Transfer(owner, target, mintedAmount);
-  }
+  /// @notice Allows `_spender` to spend no more than `_value` tokens in your behalf and then ping the contract about it
+  /// @param _spender The address authorized to spend
+  /// @param _value The max amount they can spend
+  /// @param _extraData Some extra info to send to the approved contract
 
-/* declare a function freezeAccount and parameters 'target' of type address,
-   and 'freeze' of type bool,
-   and modifier onlyOwner */
+  /* declare a function approveAndCall of parameter '_spender' of type address,
+     and '_value' of unsigned integer 256,
+     and '_extraData' of type bytes,
+     and modifier returns with parameter success of type bool */
 
-  function freezeAccount(address target, bool freeze) onlyOwner {
-    frozenAccount[target] = freeze;
-    FrozenFunds(target, freeze);
-  }
+    function(address _spender, uint256 _value, bytes _extraData) returns (bool success) {
+      tokenRecipient spender = tokenRecipient(_spender);
+      if (approve(_spender, _value)) {
+        spender.receiveApproval(msg.sender, _value, this, _extraData);
+        return true;
+      }
+    }
 
-/* declare a function of keyword 'transfer' and parameters '_to' of type address,
-   and '_value' of unsigned integer 256 */
+  /// @notice Remove `_value` tokens from the system irreversibly
+  /// @param _value The amount of money to burn
 
-  function transfer(address _to, uint256 _value) {
-    // Is there anyone listening to this transfer event
-    Transfer(msg.sender, _to, _value);
+  /* declare a function of keyword 'burn' of parameter '_value' of unsigned integer 256,
+     and modifier returns with parameter success of type bool */
 
-    // All accounts are unfrozen by default
-    require(!frozenAccount[msg.sender]);
+    function burn(uint256 _value) returns (bool success) {
+      // Check the message sender balance
+      require (balanceOf[msg.sender] > _value);
 
-    // Check for adequate balance at message sender ...
-    // and Prevent overflow of '_to' recipient balance
-    require(balanceOf[msg.sender] >= _value && balanceOf[_to] + _value >= balanceOf[_to]);
+      // Deduct from the balance of message sender the value declared
+      balanceOf[msg.sender] -= _value;
 
-    // Deduct from the balance of message sender the value declared
-    balanceOf[msg.sender] -= _value;
+      // Update totalSupply
+      totalSupply -= _value;
 
-    // Add to the balance of the '_to' recipient the value declared
-    balanceOf[_to] += _value;
-  }
+      // Invoke the event Burn to notify clients about the amount burnt
+      Burn(msg.sender, _value);
+      return true;
+    }
 
-===================================================================================
+   /* declare a function burnFrom of parameter '_from' of type address,
+     and '_value' of unsigned integer 256,
+     and modifier returns with parameter success of type bool */
+
+    function burnFrom(address _from, uint256 _value) returns (bool success) {
+      // Ensure the targeted balance is enough
+      require(balanceOf[_from] >= _value);
+
+      // Check the allowance
+      require(_value <= allowance[_from][msg.sender]);
+
+      // Subtract from target balance
+      balanceOf[_from] -= _value;
+
+      // Subtract from sender allowance
+      allowance[_from][msg.sender] -= _value;
+
+      // Update totalSupply
+      totalSupply -= _value;
+
+      // Invoke the event Burn to notify clients about the amount burnt
+      Burn(_from, _value);
+      return true;
+    }
+  // // End of contract MyToken
+}
