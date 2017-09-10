@@ -73,11 +73,17 @@ contract token {
   mapping (address => mapping (address => uint256)) public allowance;
 
   // generate a public event on the block chain that will notify clients
+ 
+  /* declare the event Transfer of parameter 'indexed from' of type address,
+     and 'indexed to' of type address, and 'value' of unsigned integer 256 */
 
-  // declare the event Transfer FBO Ethereum Wallet
   event Transfer(address indexed from, address indexed to, uint256 value);
 
-  // declare the event Burn to notify clients about the amount burnt
+  // generate a public event on the block chain that will notify clients of the amount burnt
+
+  /* declare the event Burn of parameter 'indexed from' of type address,
+     and 'value' of unsigned integer 256 */
+     
   event Burn(address indexed from, uint256 value);
 
   // The name of the contract and the name of the constructor function should match
