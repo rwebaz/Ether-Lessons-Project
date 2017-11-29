@@ -6,6 +6,14 @@
     "language": "en",
     // words - list of words to be always considered correct
     "words": [
+        "ashmenn",
+        "etherbase",
+        "fullhash",
+        "geth",
+        "keychain",
+        "keystore",
+        "publically",
+        "unpackage",
         "Vitalik"
     ],
     // flagWords - list of words to be always considered incorrect

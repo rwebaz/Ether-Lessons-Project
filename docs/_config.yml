@@ -6,8 +6,8 @@
 theme: "jekyll-theme-cayman"
 # repository: MMINAIL/mminail.github.io
 title: "Ether Lessons Project"
-tagline: "A GitHub repo of Lessons and Articles that emphasize both the GFM and Kramdown engines"
-description: "A GitHub repo of Lessons and Articles that emphasize both the GFM and Kramdown engines"
+tagline: "A GitHub repo of Lessons and Articles that emphasize the GETH and Solidity engines"
+description: "A GitHub repo of Lessons and Articles that emphasize the GETH and Solidity engines"
 twitter:
     username: "mminail"
 author:

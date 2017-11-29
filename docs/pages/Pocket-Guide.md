@@ -1,7 +1,7 @@
 ---
 title: Pocket Guide
 layout: default
-navigation_weight: 9
+navigation_weight: 7
 ---
 # Pocket Guide
 

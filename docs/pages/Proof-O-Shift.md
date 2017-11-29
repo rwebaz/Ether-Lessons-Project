@@ -1,7 +1,7 @@
 ---
 title: Proof O Shift
 layout: default
-navigation_weight: 9
+navigation_weight: 7
 ---
 # Proof O Shift
 
