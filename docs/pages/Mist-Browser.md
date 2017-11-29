@@ -1,7 +1,7 @@
 ---
 title: Mist Browser
 layout: default
-navigation_weight: 9
+navigation_weight: 5
 ---
 # Mist Browser
 

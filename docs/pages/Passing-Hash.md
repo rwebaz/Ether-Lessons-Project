@@ -1,0 +1,780 @@
+---
+title: Passing Hash
+layout: default
+navigation_weight: 7
+---
+# Passing Hash
+
+Have you ever wanted to learn how to transfer *ether*?
+
+{% include toc-flammarion.md %}
+
+## How to GETH in Mac Os High Sierra
+
+To transfer *ether* over the Ethereum platform, you must first learn how to *GETH*.
+
+### Go Ethereum = GETH
+
+**GETH** is an acronym for the official Command line interface, or (CLI) implemented in **GO** for running a full node on the **Ethereum** platform.
+
+### The GETH Executive
+
+First, download the current **GETH** executive file ( dot tar dot gz ) for your type of development machine from [Geth.ethereum.org](https://geth.ethereum.org/downloads/){:title="Click to visit the GETH downloads page presented by Ethereum dot org"}{:target="_blank"}.
+
+### Establish My_GETH
+
+From the Finder of your Mac Os development machine ...
+
+- Create a new "**My_GETH**" repo directory in the location of your choosing
+
+- In the new **My_GETH** repo directory, create a new subdirectory called *bin*
+
+- Unpackage ( unzip ) the **GETH** executive file from your download folder ( double click the received dot tar dot gz file )
+
+- Move the GETH executive file from the now expanded dot tar dot gz folder ( version 1.7.3 for Mac Os ) to the `/bin` subdirectory of your **MY_GETH** repo
+
+### Transfer In: Genesis dot json
+
+- Copy and paste the body of the genesis dot json file from [Gist.github.com](https://gist.github.com/jashmenn/f1336e4e69b8007bbce883ace96af3ea){:title="Click to visit the Genesis dot json GIST page presented by J Ashmenn and hosted by Github"}{:target="_blank"} to a blank *TextEdit* file on your Mac Os development machine.
+
+- Name the now populated blank TextEdit file, as follows:
+
+```liquid
+{% raw %}
+genesis.json.txt
+{% endraw %}
+```
+
+**Note**. You will now have to right-click over the genesis.json.txt file and select "info" to remove the "txt" suffix
+
+- Place the now renamed *genesis dot json* file in the root directory of your **My_GETH** repo
+
+## GETH Development
+
+This section of our tutorial on **GETH** will now focus on the issue of "How to Construct a Development Instance of **GETH** in Mac Os High Sierra".
+
+### Initialize
+
+From the Finder in Mac Os High Sierra ...
+
+- Right click over the directory **My_GETH**
+
+- First, select *Services* ...
+
+- Then, select *New Terminal at Folder* ...
+
+This will open a local Terminal window pointed at the root of your **My_GETH** directory.
+
+### Genesis dot json
+
+From the local Terminal prompt for the **My_GETH** directory ...
+
+- Copy and paste the following line of code into the Terminal window and press "Enter" ( return )
+
+```liquid
+{% raw %}
+./bin/geth --datadir=./datadir init genesis.json
+{% endraw %}
+```
+
+**Note**. This line of code places a data directory within your **My_GETH** repo and configures the new data directory per the previously imported *genesis dot json* file.
+
+### Anchor Links
+
+This is a test sentence for the internal page anchor #2 in red => For: Newline dot co [[2](#Newline){:.red}].
+
+The reference points to the second internal citation [[Newline dot co](#Newline){:.red}] below.
+
+By clicking on either the red [2] above, or the red [Newline dot co] ...
+{:.red}
+
+The reader will be hyperlinked to the bottom of the page directly to the referenced citation.
+
+## Establishing an Account
+
+We are now ready to establish a new **GETH** account OFF the Ethereum platform for testing purposes.
+
+From the local Terminal prompt for your **My_GETH** directory ...
+
+- Copy and paste the following line of code into the Terminal window and press "Enter" ( return )
+
+```liquid
+{% raw %}
+./bin/geth --datadir=./datadir account new
+{% endraw %}
+```
+
+The result of the execution of the code is to create a test account within your local **My_GETH** repo.
+
+**Note**. The above line of code is provided without warranty courtesy of [Newline dot co](https://www.newline.co/courses/intro-to-programming-ethereum-dapps/){:title="Click to Visit the Newline dot co library of Ethereum lessons"}{:target="_blank"}.
+
+### New Passphrase
+
+All new accounts established via the **GETH** protocol require a secure passphrase to shelter the hidden private key.
+
+Hit Enter ( return ) and reaffirm the new passphrase,
+
+This will generate both a visible public *hash* as well as a *hidden* private key for use in our new test account, as follows:
+
+```liquid
+{% raw %}
+9d64628c18f510488c6a7ecdce178e3e50aadd90
+{% endraw %}
+```
+
+As a result, the public *hash* for your new **GETH** test account is shown at the Terminal window.
+
+### List O Accounts
+
+To show our new testing account at the Terminal prompt, type the following command ...
+
+```liquid
+{% raw %}
+./bin/geth --datadir=./datadir account list
+{% endraw %}
+```
+
+**Note**. The above line of code is provided without warranty courtesy of [Newline dot co](https://www.newline.co/courses/intro-to-programming-ethereum-dapps/){:title="Click to Visit the Newline dot co library of Ethereum lessons"}{:target="_blank"}.
+
+And, to structure our view of the new account via the Terminal, type ...
+
+```liquid
+{% raw %}
+tree datadir
+{% endraw %}
+```
+
+**Note**. You can also see the same result via the Finder in Mac Os High Sierra from your **My_GETH** directory under the subdirectory `datadir/keystore`.
+
+### Redundancy
+
+The **GETH** or *Go Ethereum* local "Test - Mining - Etherbase" account we have created has many functions associated with it at the time of its inception.
+
+For an added layer of protection, the public *hash* and private *hidden* key passphrase may be stored in the Mac Os High Sierra *secure keychain* as a secure note.
+
+For example,
+
+```liquid
+{% raw %}
+Name of Account
+- GETH Ethereum Local Test Mining Etherbase Account [0]
+Public Hash
+- 9d64628c18f510488c6a7ecdce178e3e50aadd90
+Private Hidden Key Passphrase
+- SZgzbXfVybN$#kjxU%PZS!bKd$$Wd7w6
+{% endraw %}
+```
+
+**Hint**. The passphrase for your new Private *hidden* key can be generated by a *Password Management* program.
+
+See [Last Pass dot com](https://www.lastpass.com/business){:title="Click to Visit the Last Pass ( Passphrase ) Management program"}{:target="_blank"} for more detail.
+
+## The Public Hash
+
+On the other hand, the public hash may be displayed publically and compressed digitally as a *QR code* for marketing purposes.
+
+Remember, no one knows your private address and your private passphrase.
+
+No one even knows your public address or your private address and passphrase even exist ...!
+
+Until your public key becomes a part of a transaction in the Ethereum network.
+
+### Progress
+
+We have now confirmed the public *hash* to our new **GETH** testing account.
+
+The passphrase to the *hidden* private key is also now stored securely.
+
+## Private Hidden Key
+
+Ethereum accounts are generated offline programmatically by following the provided algorithm.
+
+The algorithm given generates a Public *hash* and a Private *hidden* key stored locally.
+
+The Private key is *hidden* by default.
+
+A secure passphrase guards the virtual door to the Private *hidden* key.
+
+**WARNING**. The Private *hidden* key must ONLY be used for signing digital transfers and for signing digital smart contracts that propagate throughout the Ethereum network.
+
+### The Virtual Door
+
+Your passphrase guards the virtual door to the Private *hidden* key of your Ethereum account.
+
+If you fail to properly secure the passphrase to your virtual door, your digital currency ( *ether* ) will become *entombed*, or worse ... maybe even *hacked*!
+
+### Changing the Passphrase
+
+Changing a Passphrase in **GETH** requires a bit of coding dexterity WITHOUT the aid of the **GETH** Javascript console.
+
+From the local Terminal window of your **My_GETH** directory, type the following line of code ...
+
+;where the *hash* shown is the target account Public *hash*
+
+```liquid
+{% raw %}
+./bin/geth --datadir=./datadir account update 9d64628c18f510488c6a7ecdce178e3e50aadd90
+{% endraw %}
+```
+
+Returns,
+
+```liquid
+{% raw %}
+Unlocking account 9d64628c18f510488c6a7ecdce178e3e50aadd90 | Attempt 1/3
+{% endraw %}
+```
+
+Enter the current passphrase for the account.
+
+```liquid
+{% raw %}
+Passphrase:
+{% endraw %}
+```
+
+Remember, you loose-ah the passphrase to your *hidden* Private key ...
+
+And, you will be S.O.L ( well, almost ...!)
+
+Returns,
+
+```liquid
+{% raw %}
+INFO [11-28|20:01:35] Unlocked account => address=0x9d64628c18F510488C6A7ECdCe178e3e50AAdd90
+{% endraw %}
+```
+
+**Note**. If you cannot remember or find a stored digital ( or, physical ) copy of the passphrase for the Private *hidden* key of your Ethereum account ...
+
+You will have to attempt a brute force via Python attack on your own account ...
+
+In order to try to recover the initial passphrase you used when first establishing the account offline.
+
+### Typing a new Passphrase
+
+Do not forget this passphrase.
+
+Enter the new passphrase for the account.
+
+```liquid
+{% raw %}
+Passphrase:
+{% endraw %}
+```
+
+Returns,
+
+```liquid
+{% raw %}
+Repeat passphrase: 
+{% endraw %}
+```
+
+**Note**. Please enter a secure passphrase for the new test account from your [Last Pass](https://www.lastpass.com/business){:title="Click to Visit the Last Pass ( Passphrase ) Management program"}{:target="_blank"} secure password generator.
+
+Be sure to first copy, paste, and test your [Last Pass](https://www.lastpass.com/business){:title="Click to Visit the Last Pass ( Passphrase ) Management program"}{:target="_blank"} secure passphrase to a new, open, blank `TextEdit` document.
+
+This will ensure your clipboard cache truly represents your [Last Pass](https://www.lastpass.com/business){:title="Click to Visit the Last Pass ( Passphrase ) Management program"}{:target="_blank"} secure passphrase.
+
+Upon successful verification, save the new secure passphrase in your [Last Pass](https://www.lastpass.com/business){:title="Click to Visit the Last Pass ( Passphrase ) Management program"}{:target="_blank"} application and paste the new passphrase in the Terminal window here as instructed.
+
+**Note**. The **GETH** Javascript console does not currently offer an API available whereby a change to the passphrase of an account may be effected through the console.
+
+Therefore, all passphrase changes must occur directly in the local Terminal window at your **My_GETH** directory prompt as shown.
+
+## The GETH Javascript Console
+
+The **GETH** executive program also comes bundled with its own Javascript console.
+
+To access the command line for the **GETH** Javascript console, type the following line of code at the local Terminal prompt of your **My_GETH** directory, as follows:
+
+```liquid
+{% raw %}
+./bin/geth --datadir=./datadir console
+{% endraw %}
+```
+
+This fires up a **GETH** Javascript console command line cursor `>`.
+
+The cursor `>` is now ready to accept your **GETH** Javascript console code.
+
+### The Eth Library
+
+We can also access our new Ethereum test account the `eth` library that comes bundled with the **GETH** executive program, as follows:
+
+From the command line cursor `>` of the GETH Javascript console, type the following code statement:
+
+```liquid
+{% raw %}
+eth.accounts
+{% endraw %}
+```
+
+Returns,
+
+```liquid
+{% raw %}
+["0x9d64628c18f510488c6a7ecdce178e3e50aadd90"]
+{% endraw %}
+```
+
+**Note**. All public keys are pre-fixed with the hexadecimal characters `0x` when rendered by the **GETH** console
+
+### Account Balances
+
+To obtain your account balance, use the test account public key to access your account via the **GETH** console using the following function ...
+
+From the command line cursor `>` of the GETH Javascript console, type the following code statement:
+
+```liquid
+{% raw %}
+eth.getBalance("0x9d64628c18f510488c6a7ecdce178e3e50aadd90")
+{% endraw %}
+```
+
+**Note**. All **GETH** console code statements are written in *camelCase*.
+
+Returns, no balance ( zero ), as follows:
+
+```liquid
+{% raw %}
+0
+{% endraw %}
+```
+
+**Note**. In order to access the account balance from the **GETH** console, the hexadecimally pre-fixed public key must be used.
+
+### Mining Local Ether
+
+To mine local ether, run the start command from the **GETH** console with a single thread, as follows:
+
+```liquid
+{% raw %}
+miner.start(1)
+{% endraw %}
+```
+
+To end the local mining session, run the stop command from the **GETH** console, as follows:
+
+```liquid
+{% raw %}
+miner.stop()
+{% endraw %}
+```
+
+Returns,
+
+```liquid
+{% raw %}
+true
+{% endraw %}
+```
+
+### Test Blocks
+
+To find out how many test blocks were mined during our local mining session, type the following command at the **GETH** console prompt:
+
+```liquid
+{% raw %}
+eth.blockNumber
+{% endraw %}
+```
+
+Returns, a numeral, as follows:
+
+```liquid
+{% raw %}
+33
+{% endraw %}
+```
+
+## Counting the Ether
+
+Each mined block generates a local award of *ether*.
+
+To count the amount of *ether* produced from your mining run ...
+
+We need to view your mining destination account ( aka your *Etherbase* account )
+
+ie.) the original testing account we set up initially.
+
+**Note**. More than one (1) account is allowed when using the **GETH** Javascript console.
+
+However, we shall keep our mining destination account ie.) our *Etherbase* account the same as our original test account for now.
+
+### The Index Account
+
+Because in our array of accounts we simply have the one "index" account, we can use the numeral zero `0` to access our mining - testing - Etherbase account balance wrapped in an array `[0]` placeholder.
+
+**Note**. The balance shown will be denominated in *wei*, the smallest *ether* denominator.
+
+### Get Balance Method
+
+Type the following command statement at the **GETH** Javascript console prompt `>` to return the *ether* balance denominated in *wei*
+
+```liquid
+{% raw %}
+eth.getBalance(eth.accounts[0])
+{% endraw %}
+```
+
+Returns,
+
+```liquid
+{% raw %}
+165000000000000000000
+{% endraw %}
+```
+
+### Conversion to Ether
+
+Now, to convert *wei* to *ether* where one (1) *ether* is equal `=` to ten (10) to `^` the eighteenth (18th) power *wei* ...
+
+We have to access the `web3` library.
+
+The `web3` library was bundled with the original **GETH** executive file which we downloaded earlier.
+
+Inside the `web3` library is a method called *fromWei*.
+
+So, to access the `web3` library and convert our locally mined and earned *wei* to *ether* ...
+
+Type the following conversion command at the **GETH** Javascript console prompt `>`, and hit the Enter ( return ) key:
+
+
+```liquid
+{% raw %}
+web3.fromWei(eth.getBalance(eth.accounts[0]), "ether")
+{% endraw %}
+```
+
+Returns,
+
+```liquid
+{% raw %}
+165
+{% endraw %}
+```
+
+### Transferring Ether
+
+In order to transfer some of the new *ether* earned from our mining effort from our initial test - mining - Etherbase account `[0]` to another location ...
+
+We will have to create a new Personal account `[1]` via the **GETH** Javascript console prompt.
+
+### Adding Another Account
+
+At the prompt, type the following code statement to generate a new, separate Personal account of parameter passphrase ( new ).
+
+```liquid
+{% raw %}
+personal.newAccount("6$&!wk33s$zA9Zm#VysHf!kP6JUApGy3")
+{% endraw %}
+```
+
+Remember to use the [Last Pass](https://www.lastpass.com/business){:title="Click to Visit the Last Pass ( Passphrase ) Management program"}{:target="_blank"} platform to generate a new, secure passphrase.
+
+Returns,
+
+```liquid
+{% raw %}
+"0xe6a21600f542464d20982bd6b5e2ae874ad8901c"
+{% endraw %}
+```
+
+We have successfully added another instance of account to the account array by providing a new Passphrase parameter as the argument for the `personal.newAccount` method.
+
+### Protecting the Passphrase
+
+For an added layer of protection for our new **GETH** Ethereum Local Test Personal Account `[1]`, store a digital or physical copy of the given Public *hash* returned with the Private *hidden* key passphrase given.
+
+You may use the Mac Os High Sierra keychain as a repository for a secure note, as follows:
+
+
+```liquid
+{% raw %}
+Name of Account
+- GETH Go Ethereum Local Test Personal Account [1]
+Public Hash
+- e6a21600f542464d20982bd6b5e2ae874ad8901c
+Private Hidden Key Passphrase
+- 6$&!wk33s$zA9Zm#VysHf!kP6JUApGy3
+{% endraw %}
+```
+
+In addition, the same parameters may be stored locally ...
+
+A. As an entry within the [Last Pass](https://www.lastpass.com/business){:title="Click to Visit the Last Pass ( Passphrase ) Management program"}{:target="_blank"} program *Vault*
+
+Or,
+
+B. As a physically written down memo that is stored at your lockbox at the bank
+
+Or,
+
+C. As a separate entry stored within a *hard* wallet far removed from access to the Internet.
+
+### Concept Hammer
+
+The concept here to hammer home is ...
+
+"Do NOT lose ...
+
+A. The Public *hash* to your account
+
+Or,
+
+B. Your Private *hidden* Key Passphrase
+
+## Updated Accounts List
+
+How to view the updated accounts list from the **GETH** Javascript console prompt `>`?
+
+Type the following code statement ... and, hit the Enter ( return ) key, as follows:
+
+```liquid
+{% raw %}
+eth.accounts
+{% endraw %}
+```
+
+Returns,
+
+```liquid
+{% raw %}
+The two Public hash ( one for each account ), prefixed hexadecimally
+{% endraw %}
+```
+
+## Ether Transfer Code
+
+Use the `sendTransaction` method to transfer ether from one account to another, as follows:
+
+First, create an undefined Javascript variable `trx` that houses the "from" and "to" hexadecimally prefixed Public *hash* of each account [0] and [1] ...
+
+As well as the transfer value, as follows:
+
+```liquid
+{% raw %}
+var trx = {from: "0x9d64628c18f510488c6a7ecdce178e3e50aadd90", to: "0xe6a21600f542464d20982bd6b5e2ae874ad8901c", value: web3.toWei(3, "ether")}
+{% endraw %}
+```
+
+Next, perform the "smart contract" by entering the following line of code into the **GETH** Javascript console prompt `>` and hit the Enter ( return ) key ...
+
+```liquid
+{% raw %}
+personal.sendTransaction(trx, "SZgzbXfVybN$#kjxU%PZS!bKd$$Wd7w6")
+{% endraw %}
+```
+
+Returns,
+
+```liquid
+{% raw %}
+INFO [11-28|21:02:03] Submitted transaction  =>  fullhash=0x7c7da4e4a6e4fabe8a05f422be22cd91bc23727407a232513193f9f8243cd232 
+{% endraw %}
+```
+
+And,
+
+```liquid
+{% raw %}
+recipient=0xe6a21600f542464D20982bD6B5E2aE874ad8901C
+{% endraw %}
+```
+
+Also returns, a transaction id ...
+
+```liquid
+{% raw %}
+"0x7c7da4e4a6e4fabe8a05f422be22cd91bc23727407a232513193f9f8243cd232"
+{% endraw %}
+```
+
+Yet, the balances have yet to reflect the transaction as shown by the following **GETH** Javascript console exercise ...
+
+## The Conundrum
+
+From the **GETH** Javascript console prompt ...
+
+Enter the following line of code and hit the Enter ( return ) key, as follows:
+
+```liquid
+{% raw %}
+> eth.getBalance(eth.accounts[1])
+{% endraw %}
+```
+
+Returns,
+
+```liquid
+{% raw %}
+0
+{% endraw %}
+```
+
+And,
+
+```liquid
+{% raw %}
+> web3.fromWei(eth.getBalance(eth.accounts[1]), "ether")
+{% endraw %}
+```
+
+Returns same,
+
+```liquid
+{% raw %}
+0
+{% endraw %}
+```
+
+While,
+
+```liquid
+{% raw %}
+> web3.fromWei(eth.getBalance(eth.accounts[0]), "ether")
+{% endraw %}
+```
+
+Returns,
+
+```liquid
+{% raw %}
+105
+{% endraw %}
+```
+
+## Time to Mine Again
+
+Before we can fire up our local mine again to allow our expert miners to include our "smart contract" in the next block of transactions, we must unlock the account that holds the *ether*
+
+### Unlocking an Account
+
+How do we unlock the account that holds the *ether*?
+
+In this case, we must unlock the "index" [0] test - mining - Etherbase account.
+
+To unlock the "From" account, use the `unlockAccount` method at the **GETH** Javascript console prompt `>` ...
+
+And, pass the parameters of the Public *hash* and Private *hidden* key Passphrase to the function, as follows:
+
+```liquid
+{% raw %}
+personal.unlockAccount("0x9d64628c18f510488c6a7ecdce178e3e50aadd90", "SZgzbXfVybN$#kjxU%PZS!bKd$$Wd7w6")
+{% endraw %}
+```
+
+Returns,
+
+```liquid
+{% raw %}
+true
+{% endraw %}
+```
+
+### Common Error
+
+Porting from the **Last Pass** program to the Terminal window ...
+
+Try,
+
+```liquid
+{% raw %}
+personal.unlockAccount("0x9d64628c18f510488c6a7ecdce178e3e50aadd90", "./bin/geth --datadir=./datadir account new")
+{% endraw %}
+```
+
+Returns,
+
+```liquid
+{% raw %}
+true
+{% endraw %}
+```
+
+### When The Given Fails
+
+```liquid
+{% raw %}
+eth.sendTransaction({from: eth.accounts[0], to: eth.accounts[1], value: web3.toWei(3, "ether")})
+{% endraw %}
+```
+
+Returns,
+
+```liquid
+{% raw %}
+Error: authentication needed: password or unlock
+{% endraw %}
+```
+
+Or,
+
+```liquid
+{% raw %}
+Error: insufficient funds for gas * price + value
+{% endraw %}
+```
+
+### Solution
+
+Go to "How to Unlock" above ...
+
+And, get the balances of each account to confirm, as follows:
+
+```liquid
+{% raw %}
+eth.getBalance(eth.accounts[0])
+eth.getBalance(eth.accounts[1])
+eth.getBalance(eth.accounts[2])
+{% endraw %}
+```
+
+## Confirmation
+
+To confirm the "Passing of the Hash" in the form of *ether* from one account to the other ...
+
+Type the following code at the **GETH** Javascript console prompt `>`.
+
+### The Code
+
+Type the following line of code and hit Enter ( return ), as follows:
+
+```liquid
+{% raw %}
+eth.getTransaction("0x7c7da4e4a6e4fabe8a05f422be22cd91bc23727407a232513193f9f8243cd232")
+{% endraw %}
+```
+
+### Returns
+
+```liquid
+{% raw %}
+{
+  blockHash: "0xa1de5ac3cec0bbe87962233f265472b963379b0063c570ca0dc0e20c184605c8",
+  blockNumber: 1109,
+  from: "0x9d64628c18f510488c6a7ecdce178e3e50aadd90",
+  gas: 90000,
+  gasPrice: 18000000000,
+  hash: "0x7c7da4e4a6e4fabe8a05f422be22cd91bc23727407a232513193f9f8243cd232",
+  input: "0x",
+  nonce: 0,
+  r: "0xe315d6d3f20eb776c7f048e75b2418355743b26bca4d836c87034d8a4db8c4f8",
+  s: "0xfadbc1f3d896690fcf62d2a4834a7436f4917d2814900adcc049016d828c098",
+  to: "0xe6a21600f542464d20982bd6b5e2ae874ad8901c",
+  transactionIndex: 0,
+  v: "0xed",
+  value: 3000000000000000000
+}
+{% endraw %}
+```
+
+{% include sources-and-uses.md %}
+
+1. {:#Newline}Code lines courtesy of [Newline dot co](https://www.newline.co/courses/intro-to-programming-ethereum-dapps/){:title="Click to Visit the Newline dot co library of Ethereum lessons"}{:target="_blank"}.
+
+### External Sources
+
+- The [Project Source Links](https://mminail.github.io/Ether/Source-Ether-Links.htm){:title="Click to Visit the Source Links page of the Ether Lessons Project at GitHub pages"}{:target="_blank"} page of the Ether Lessons Project. Published by © 2017 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
