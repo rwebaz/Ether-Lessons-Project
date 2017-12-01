@@ -193,9 +193,9 @@ Until your Public *hash* becomes a part of a transaction in the Ethereum network
 
 ### Progress
 
-We have now confirmed the public *hash* to our new **GETH** testing account.
+We have now confirmed the Public *hash* to our new **GETH** testing account.
 
-The passphrase to the Private *hidden* key is also now stored securely.
+Plus, the passphrase to the Private *hidden* key is also stored securely.
 
 ## Private Hidden Key
 
