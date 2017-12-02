@@ -375,7 +375,53 @@ Constants are written in ALL CAPS.
 
 **Note**. In order to access the account balance from the **GETH** Javascript console, the hexadecimally pre-fixed public key must be used.
 
-### Mining Local Ether
+## Mining Local Ether
+
+Each mined block generates a local award of *ether*.
+
+To count the amount of *ether* produced from your mining run ...
+
+We will need to view your mining destination account aka your *Etherbase* account ie.) the original testing account we set up initially.
+
+**Note**. More than one (1) account is allowed when using the **GETH** Javascript console.
+
+However, we shall keep our mining destination account ie.) our *Etherbase* account the same as our original test account for now.
+
+### The Index Account
+
+Because in our array of accounts we simply have the one "index" account, we can use the numeral zero `0` to access our mining - testing - Etherbase account balance when wrapped in the array `[ ]` placeholder.
+
+### Set Extra Text
+
+To set an extra thirty-two (32) bytes of text inside each locally mined block ...
+
+Invoke the `setExtra` method of the **miner** API, as follows:
+
+From the **GETH** Javascript console prompt `>` ...
+
+```liquid
+{% raw %}
+miner.setExtra("Medcoin™ Text Block")
+{% endraw %}
+```
+
+### Setting the Gas Limit
+
+To set a *gas limit* required to mine each local block ...
+
+Invoke the `setGasPrice` method of the **miner** API, as follows:
+
+From the **GETH** Javascript console prompt `>` ...
+
+```liquid
+{% raw %}
+miner.setGasPrice(00001)
+{% endraw %}
+```
+
+**Note**. Any transactions or "smart contracts" that have entered a *gas* value below the designated *gas limit* ( as expressed in *wei* ) are excluded from the mining process.
+
+### Start to Mine
 
 To mine local *ether* for gas ...
 
@@ -388,6 +434,8 @@ miner.start(1)
 ```
 
 To end the local mining session ...
+
+### End Mine Session
 
 - Run the *stop* command from the **GETH** Javascript console prompt `>`, as follows:
 
@@ -402,6 +450,24 @@ Returns,
 ```liquid
 {% raw %}
 true
+{% endraw %}
+```
+
+### Designating the Etherbase
+
+The *Etherbase* account is where all local mining rewards will be credited.
+
+Recall in the original test account, the `[0]` index account ...
+
+The *Etherbase* account automatically defaults to the `[0]` index account upon inception.
+
+To explicitly designate the original test account as the recipient for all mining rewards ( or, any other subsequent instance of `account` created ) ...
+
+- From the **GETH** Javascript console, invoke the `setEtherBase` method to set the *Etherbase* programatically by designating the target account Public *hash* as the parameter of the lone argument, as follows:
+
+```liquid
+{% raw %}
+miner.setEtherbase("0x9d64628c18f510488c6a7ecdce178e3e50aadd90")
 {% endraw %}
 ```
 
@@ -427,19 +493,7 @@ Returns, a numeral
 
 ## Counting the Ether
 
-Each mined block generates a local award of *ether*.
-
-To count the amount of *ether* produced from your mining run ...
-
-We will need to view your mining destination account aka your *Etherbase* account ie.) the original testing account we set up initially.
-
-**Note**. More than one (1) account is allowed when using the **GETH** Javascript console.
-
-However, we shall keep our mining destination account ie.) our *Etherbase* account the same as our original test account for now.
-
-### The Index Account
-
-Because in our array of accounts we simply have the one "index" account, we can use the numeral zero `0` to access our mining - testing - Etherbase account balance when wrapped in the array `[ ]` placeholder.
+How much *wei* has been credited to your *Etherbase* account as a result of mining `x` blocks?
 
 ### Get Balance Method
 
@@ -502,6 +556,8 @@ Returns,
 In order to transfer a small portion of the *ether* earned from our mining effort from our initial test - mining - Etherbase account `[0]` to another location ...
 
 We will have to create a new Personal account `[1]` via the **GETH** Javascript console prompt `>`.
+
+**Note**. The **personal** API manages the Private *hidden* keys of the local key store.
 
 ### Adding Another Account
 
