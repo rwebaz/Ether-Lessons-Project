@@ -120,9 +120,25 @@ The result of the execution of the code is to create a test account within your 
 
 All new accounts established via the **GETH** protocol require a secure passphrase to shelter the Private *hidden* key.
 
+**Enter** your selected passphrase for the account.
+
+```liquid
+{% raw %}
+Passphrase:
+{% endraw %}
+```
+
 - Hit **Enter** ( return ) and reaffirm the new passphrase,
 
-- This will generate both a visible public *hash* as well as a *hidden* private key for use in our new test account, as follows:
+```liquid
+{% raw %}
+Repeat passphrase:
+{% endraw %}
+```
+
+This will generate both a visible public *hash* as well as a *hidden* private key for use in our new test account, as follows:
+
+Returns,
 
 ```liquid
 {% raw %}
@@ -419,7 +435,7 @@ miner.setGasPrice(00001)
 {% endraw %}
 ```
 
-**Note**. Any transactions or "smart contracts" that have entered a *gas* value below the designated *gas limit* ( as expressed in *wei* ) are excluded from the mining process.
+**Note**. Any transactions or "smart contracts" that have entered a *gas* value below the designated *gas limit* ( as expressed in *g-wei* ) are excluded from the mining process.
 
 ### Start to Mine
 
@@ -457,13 +473,17 @@ true
 
 The *Etherbase* account is where all local mining rewards will be credited.
 
-Recall in the original test account, the `[0]` index account ...
+Recall in the original test account ( the `[0]` index account ) ...
 
-The *Etherbase* account automatically defaults to the `[0]` index account upon inception.
+The *Etherbase* account automatically defaulted to the `[0]` index account upon inception.
 
-To explicitly designate the original test account as the recipient for all mining rewards ( or, any other subsequent instance of `account` created ) ...
+To explicitly designate the original test account as the recipient for all mining rewards ...
 
-- From the **GETH** Javascript console, invoke the `setEtherBase` method to set the *Etherbase* programatically by designating the target account Public *hash* as the parameter of the lone argument, as follows:
+Or, to designated any other subsequent instance of `account` created ) ...
+
+- From the **GETH** Javascript console, invoke the `setEtherBase` method of the **miner** API
+
+- Designate the target account Public *hash* as the parameter of the lone argument to set the *Etherbase* programatically, as follows:
 
 ```liquid
 {% raw %}
@@ -475,7 +495,7 @@ miner.setEtherbase("0x9d64628c18f510488c6a7ecdce178e3e50aadd90")
 
 To find out how many test blocks were mined during our local mining session ...
 
-- Type the `blockNumber` method at the **GETH** Javascript console prompt `>`, as follows:
+- Type the `blockNumber` method of the **eth** library at the **GETH** Javascript console prompt `>`, as follows:
 
 ```liquid
 {% raw %}
@@ -493,7 +513,7 @@ Returns, a numeral
 
 ## Counting the Ether
 
-How much *wei* has been credited to your *Etherbase* account as a result of mining `x` blocks?
+How much *wei* has been credited to your *Etherbase* account as a result of the mining of `x` blocks?
 
 ### Get Balance Method
 
@@ -517,7 +537,7 @@ Returns,
 
 ### Conversion to Ether
 
-Now, to convert *wei* to *ether* ...
+Now, to convert our *wei* to *ether* ...
 
 ;where one (1) *ether* is equal `=` to ten (10) to `^` the eighteenth (18th) power *wei* ...
 
@@ -553,7 +573,9 @@ Returns,
 
 ## Transferring Ether
 
-In order to transfer a small portion of the *ether* earned from our mining effort from our initial test - mining - Etherbase account `[0]` to another location ...
+In order to transfer a small portion of the *ether* earned from our mining effort ...
+
+- From our initial test - mining - Etherbase account `[0]` to another location
 
 We will have to create a new Personal account `[1]` via the **GETH** Javascript console prompt `>`.
 
@@ -583,17 +605,21 @@ Returns,
 {% endraw %}
 ```
 
-We have successfully added another instance of account to the account array by providing a new Passphrase parameter as the argument for the `personal.newAccount` method.
+We have successfully added another instance of *account* to the **account array** by providing a new Passphrase parameter as the argument for the `personal.newAccount` method.
 
 ### Protecting the Passphrase
 
-For an added layer of protection ...
+As an added layer of protection ...
 
-For our new **GETH** Ethereum Local Test Personal Account `[1]` ...
+For our new **GETH** Ethereum Local Test Personal Account `[1]`
 
-Store a digital or physical copy of the given Public *hash* returned with the passphrase for the Private *hidden* key provided in a secure note.
+- Store a digital or physical copy of the given Public *hash* returned
 
-You may use the Mac Os High Sierra secure *keychain* as a repository for the secure note, as follows:
+- With the passphrase for the Private *hidden* key provided
+
+In a secure note.
+
+**Note**. You may use the Mac Os High Sierra secure *keychain* as a repository for the secure note, as follows:
 
 
 ```liquid
