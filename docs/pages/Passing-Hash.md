@@ -393,9 +393,25 @@ Constants are written in ALL CAPS.
 
 ## Mining Local Ether
 
-Each mined block generates a local award of *ether*.
+Over the **Ethereum** network, each new mined block of transactions ...
 
-To count the amount of *ether* produced from your mining run ...
+- Generates a one-time local award of *ether*
+
+- At the rate of approximately one (1) new block of transactions mined every twenty-five (25) seconds.
+
+So, over the course of one (1) hour, the **Ethereum** network generates ...
+
+**Formula**: [ Sixty (60) seconds X Sixty (60) minutes ] / [ Twenty-five (25) seconds ]
+
+- Yields approximately one-hundred forty-four (144) new blocks of transactions per hour
+
+- Each new block of transactions mined contains an eligibility for a one-time award of *ether*
+
+- The award is used to compensate the *miners* of the network for their cost of electricity, depreciation of their mining machines, etc.
+
+### Simulation Results
+
+To count the amount of *ether* produced from your simulated mining run ...
 
 We will need to view your mining destination account aka your *Etherbase* account ie.) the original testing account we set up initially.
 
@@ -421,7 +437,7 @@ miner.setExtra("Medcoin™ Text Block")
 {% endraw %}
 ```
 
-### Setting the Gas Limit
+### Wei-dai: Setting the Gas Limit
 
 To set a *gas limit* required to mine each local block ...
 
@@ -479,7 +495,7 @@ The *Etherbase* account automatically defaulted to the `[0]` index account upon 
 
 To explicitly designate the original test account as the recipient for all mining rewards ...
 
-Or, to designated any other subsequent instance of `account` created ) ...
+Or, to designated any other subsequent instance of `account` created ...
 
 - From the **GETH** Javascript console, invoke the `setEtherBase` method of the **miner** API
 
@@ -514,6 +530,50 @@ Returns, a numeral
 ## Counting the Ether
 
 How much *wei* has been credited to your *Etherbase* account as a result of the mining of `x` blocks?
+
+**Note**. There are 1,000 zillion *wei* in one **Ether** coin, or 1 quadrillion *wei* per *ether*.
+
+That's right.
+
+So, when you see Bitcoin (BTC) or Ether (ETH) quoted at a crypto currency exchange, think not in terms of what the dollar value of a single coin is today.
+
+Think rather what the cost of (1) *wei* will be tomorrow!
+
+By the way, that's (18) zeroes.
+
+Hundreds, (000)
+
+Thousands, (000,000)
+
+Millions, (000,000,000)
+
+Billions, (000,000,000,000)
+
+Trillions, (000,000,000,000,000)
+
+Zillions. (000,000,000,000,000,000)
+
+Quadrillions (000,000,000,000,000,000,000)
+
+All with a set of three (000) zeroes each.
+
+### Crypto Billionaires
+
+When Bitcoin (BTC) first hit the global scene a-way back in '09 it was priced at eight (8) cents USD per coin.
+
+About the cost of electrically mining one (1) bitcoin at the time.
+
+Fast forward to today ... at the close of the year #2017.
+
+Had you been lucky enough to purchase $10,000 worth of bitcoin a-way back in '09 for the princely sum of eight (8) cents USD per coin ...
+
+You would have today a portfolio value of 125,000 x $10,000 = $1,250,000,000
+
+All you had to do was simply print out your paper wallet with your Public hash and Private key ( and, secure passphrase ... if applicable ).
+
+And, then stuff that piece of paper in your lock box over at the bank ...
+
+And, wait.
 
 ### Get Balance Method
 
