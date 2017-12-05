@@ -423,7 +423,7 @@ However, we shall keep our mining destination account ie.) our *Etherbase* accou
 
 Because in our array of accounts we simply have the one "index" account, we can use the numeral zero `0` to access our mining - testing - Etherbase account balance when wrapped in the array `[ ]` placeholder.
 
-### Set Extra Text
+### Setting Extra Text
 
 To set an extra thirty-two (32) bytes of text inside each locally mined block ...
 
@@ -433,9 +433,21 @@ From the **GETH** Javascript console prompt `>` ...
 
 ```liquid
 {% raw %}
-miner.setExtra("Medcoin™ Text Block")
+miner.setExtra("Medcoin™ symbol #MDC Test Block")
 {% endraw %}
 ```
+
+**Note**. Any transactions or "smart contracts" that have entered a *gas* value below the designated *gas limit* ( as expressed in *g-wei* ) are excluded from the mining process.
+
+### Ethereum Converter
+
+To convert any denomination of *ether* to any of its many subdivisions ...
+
+- Visit [The Ethereum Converter](https://converter.murkin.me/){:title="Click to Visit the Ethereum Converter"}{:target="_blank"}
+
+For example ...
+
+- The value of one (1) *g-wei* is equal to one-million ( 1,000,000,000 ) *wei*
 
 ### Wei-dai: Setting the Gas Limit
 
@@ -447,11 +459,48 @@ From the **GETH** Javascript console prompt `>` ...
 
 ```liquid
 {% raw %}
-miner.setGasPrice(00001)
+miner.setGasPrice(1000000000)
 {% endraw %}
 ```
 
-**Note**. Any transactions or "smart contracts" that have entered a *gas* value below the designated *gas limit* ( as expressed in *g-wei* ) are excluded from the mining process.
+### Eth Gas Station
+
+Reviewing an excerpt from the [Hash Power Table](https://ethgasstation.info/hashPowerTable.php){:title="Click to Visit the Eth Gas Station"}{:target="_blank"} over at the **Eth Gas Station** ...
+
+- Reveals the percentage of transactions that got mined during the given time frame
+
+- At various levels of **gas limit** denominated in tenths of one (1) *g-wei*
+
+- Up to and including one (1) *g-wei*
+
+### Hash Power Table
+
+|-------------------------------------+--------------------------------------|
+|Lowest Gas Price In Block ( *g-wei* )|Percentage ( % ) of Total Blocks Mined|
+|:---------:|:---------:|
+|0.0|0%|
+|0.1|0%|
+|0.2|0%|
+|0.3|0%|
+|0.4|0%|
+|0.5|0%|
+|0.6|0%|
+|0.7|0%|
+|0.8|0%|
+|0.9|0%|
+|1.0|5%|
+
+**Observe**. Notice no transaction took place within the time frame given when a *gas limit* of less than one (1) *g-wei* was designated.
+
+As a result, only 5% of the transactions entered during the time frame given became entered into an official mined block at the *gas limit* of one (1) *g-wei*.
+
+Although it may take longer for your transaction to enter the *Ethereum block chain* with a *gas limit* of one (1) *g-wei* ...
+
+- You will save on *wei* if you are successful in bidding your transaction at a *gas limit* of one (1) *g-wei*.
+
+**Conclusion**. Go with a *gas limit* of one (1) *g-wei* ( and, be prepared to wait ).
+
+**Note**. The amount of time it took for those successful transactions to make it into the *Ethereum network blockchain* is also shown at the [Eth Gas Station](https://ethgasstation.info/hashPowerTable.php){:title="Click to Visit the Eth Gas Station"}{:target="_blank"}.
 
 ### Start to Mine
 
