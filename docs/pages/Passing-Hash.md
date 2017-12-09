@@ -618,7 +618,15 @@ Had you been lucky enough to purchase $10,000 worth of bitcoin a-way back in '09
 
 You would have today a portfolio value of 125,000 x $10,000 = $1,250,000,000
 
-All you had to do was simply print out your paper wallet with your Public hash and Private key ( and, secure passphrase ... if applicable ).
+And, at $15,000 USD per coin ...
+
+Your portfolio value would be = $1,800,000,000
+
+800 - 250 = 550
+
+Wow! A change in portfolio value of $550 mill USD in one week!
+
+All you had to do back then was simply print out your paper wallet with your Public hash and Private key ( and, secure passphrase ... if applicable ).
 
 And, then stuff that piece of paper in your lock box over at the bank ...
 
