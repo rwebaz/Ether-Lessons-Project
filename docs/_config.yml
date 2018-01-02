@@ -1,13 +1,21 @@
 # Site settings
 #
-# Date of this Update to Config-template file ver 08-13-2017 PM
+# Date of this Update to Config-template file ver 12-31-2017
 #
 # github: [metadata]
+#
+# Uncomment theme for docs folder
 theme: "jekyll-theme-cayman"
-# repository: MMINAIL/mminail.github.io
+#
+# There is one main repository as of 12-31-17
+# repository: https://www.github.com/MMINAIL/mminail.github.io
+#
+# There are approx sixty auxillary repositories as of 12-31-17
+# repository: https://www.github.com/rwebaz/Ether-Lessons-Project
+#
 title: "Ether Lessons Project"
-tagline: "A GitHub repo of Lessons and Articles that emphasize the GETH and Solidity engines"
-description: "A GitHub repo of Lessons and Articles that emphasize the GETH and Solidity engines"
+tagline: "A GitHub repo of Lessons and Articles that emphasize the GETH and Solidity development engines"
+description: "A GitHub repo of Lessons and Articles that emphasize the GETH and Solidity development engines."
 twitter:
     username: "mminail"
 author:
@@ -15,9 +23,9 @@ author:
     email: "mminail@icloud.com"
     github_username: "rwebaz"
     twitter_username: "rwebaz"
-# The 'baseurl' is the subpath of your designated project, e.g. /Liquid-Lessons-Project
+# The 'baseurl' is the subpath of your designated project, e.g. /Liquid-Lessons-Project or /blog or simply "/"
 baseurl: "/Ether-Lessons-Project"
-# The 'url' is the parental web address of your designated project, e.g. /https://rwebaz.github.io
+# The 'url' is the parental web address of your designated project, e.g. /https://mminail.github.io
 url: "https://rwebaz.github.io"
 exclude: ['README.md']
 markdown: "kramdown"
@@ -42,11 +50,6 @@ defaults:
 defaults:
   - scope:
       path: "assets/img/svg"
-    values:
-      image: "true"
-defaults:
-  - scope:
-      path: "assets/ico"
     values:
       image: "true"
 defaults:
