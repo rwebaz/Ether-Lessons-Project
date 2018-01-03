@@ -81,7 +81,7 @@ Now, if I knew the price of one `wei` given there are 1,000 *zillion* `wei` in o
 
 Then, I could calculate the cost of running my "funds transfer" *smart contract* one time over the **Ethereum** network.
 
-(Not counting the time it takes just to figure our the cost of doing so!)
+(Not counting the time it takes just to figure out the cost of doing so!)
 
 ## Coin Base
 
@@ -154,6 +154,6 @@ Place code here
 
 ### External Sources
 
-- The [Project Source Links](https://mminail.github.io/Shell/Source-Shell-Links.htm){:title="Click to Visit the Source Links page of the Shell Lessons Project at GitHub pages"}{:target="_blank"} page of the Shell Lessons Project. Published by © 2017 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
+- The [Project Source Links](https://mminail.github.io/Ether/Source-Ether-Links.htm){:title="Click to Visit the Source Links page of the Ether Lessons Project at GitHub pages"}{:target="_blank"} page of the Ether Lessons Project. Published by © 2017 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
 
 - Solving the [Ethereum Gas Puzzle](https://youtu.be/yFb2nuUUDX0){:title="Click to Review how the Ethereum Network Sets Its Minimum and Maximum Gas Limits via You Tube"}{:target="_blank"} by Robert Lie of Zaandam, the Netherlands (NL). Published by © 2017 [Mobilefish.com](https://www.mobilefish.com){:title="Click to Visit the Home Page of Mobile Fish dot com"}{:target="_blank"}.
