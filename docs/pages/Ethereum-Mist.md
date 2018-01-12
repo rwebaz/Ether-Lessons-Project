@@ -7,7 +7,7 @@ navigation_weight: 4
 
 **Mist** is the official Ethereum crypto currency Operating wallet.
 
-{% include md-toc-medcoin-gold.htm %}
+{% include toc-flammarion.md %}
 
 ## Aleth Zero
 
@@ -148,10 +148,20 @@ Who gets to pay the Miner for reconciling the transaction and for writing the re
 
 Any takers?
 
+## Last Subtitle
+
+Place the introducing line of text ie.) the 'tagline' here ...
+
+```liquid
+{% raw %}
+Enjoy the successful output!
+{% endraw %}
+```
+
 {% include sources-and-uses.md %}
 
 ### External Sources
 
-- [Project Source Links](https://rwebaz.github.io/Medcoin-Crypto-Currency-Project/pages/Source-Links.html){:title="Click to Visit the Medcoin™ Crypto Currency Project Source Links Page"}{:target="_blank"). Published by © 2017 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
+- [Project Source Links](https://mminail.github.io/Medcoin/Source-Medcoin-Links.htm){:title="Click to Visit the Medcoin™ Crypto Currency Project Source Links Page"}{:target="_blank"). Published by © 2017 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
 
 - [Block Chain: Understanding Financial Technology by Charles Jensen](https://www.amazon.com/){:title="Click to Visit Block Chain: Understanding Financial Technology by Charles Jensen at Amazon"}{:target="_blank"). Self-published by © 2017 [Charles Jensen](https://www.amazon.com/){:title="Click to Visit Block Chain: Understanding Financial Technology by Charles Jensen at Amazon"}{:target="_blank"}.
