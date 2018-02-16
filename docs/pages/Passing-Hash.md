@@ -1,13 +1,16 @@
 ---
 title: Passing Hash
 layout: default
-navigation_weight: 7
+excerpt: Have you ever wanted to learn how to transfer ether ...
+version: Page Template md Dtd 02-15-18
+navigation_weight: 8
+categories: ethereum
 ---
-# Passing Hash
+# {{ page.title }}
 
-Have you ever wanted to learn how to transfer *ether*?
+{{ page.excerpt }}
 
-{% include toc-flammarion.md %}
+{% include toc.md %}
 
 ## How to GETH in Mac Os High Sierra
 
@@ -87,9 +90,9 @@ From the local Terminal prompt for the **My_GETH** directory ...
 
 ### Anchor Links
 
-This is a test sentence for the internal page anchor #2 in red => For: Newline dot co [[2](#Newline){:.red}].
+This is a test sentence for the internal page anchor #2 in red => For: Newline dot co [[2](#NEWLINE){:.red}].
 
-The reference points to the second internal citation [[Newline dot co](#Newline){:.red}] below.
+The reference points to the second internal citation [[Newline dot co](#NEWLINE){:.red}] below.
 
 By clicking on either the red [2] above, or the red [Newline dot co] ...
 {:.red}
@@ -1087,10 +1090,28 @@ eth.getBalance(eth.accounts[2])
 {% endraw %}
 ```
 
+## Import Code
+
+More to come ...
+
+## Last Subtitle
+
+**Note**. The above synopsis was derived from an article written by Newline [[2](#NEWLINE){:.red}].
+
+### Raw Code Block
+
+```liquid
+{% raw %}
+Enjoy the successful output!
+{% endraw %}
+```
+
 {% include sources-and-uses.md %}
 
-1. {:#Newline}Code lines courtesy of [Newline dot co](https://www.newline.co/courses/intro-to-programming-ethereum-dapps/){:title="Click to Visit the Newline dot co library of Ethereum lessons"}{:target="_blank"}.
+1. {:#NEWLINE}Code lines courtesy of [Newline dot co](https://www.newline.co/courses/intro-to-programming-ethereum-dapps/){:title="Click to Visit the Newline dot co library of Ethereum lessons"}{:target="_blank"}. Published by © 2017 [Newline.co](https://www.newline.co/){:title="Click to Visit the Home Page of Newline dot co"}{:target="_blank"}.
 
 ### External Sources
 
-- The [Project Source Links](https://mminail.github.io/Ether/Source-Ether-Links.htm){:title="Click to Visit the Source Links page of the Ether Lessons Project at GitHub pages"}{:target="_blank"} page of the Ether Lessons Project. Published by © 2017 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
+- The [Project Source Links](https://mminail.github.io/Ether/Source-Ether-Links.htm){:title="Click to Visit the Source Links page of the Ether Lessons Project at GitHub pages"}{:target="_blank"} page of the Ether Lessons Project. Published by © 2017 - 2018 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
+
+**Note**. This page crafted with {{ page.version }}.

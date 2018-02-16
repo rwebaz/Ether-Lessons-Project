@@ -1,15 +1,20 @@
 ---
 title: Proof O Shift
 layout: default
-navigation_weight: 7
+excerpt: Once engaged the shift begins to shape over a four (4) hour period of time ...
+version: Page Template md Dtd 02-15-18
+navigation_weight: 8
+categories: ethereum
 ---
-# Proof O Shift
+# {{ page.title }}
 
-Both **Proof-O-Work** and **Proof-O-Stack** are dynastic models eligible for severe corruption of the masses, if not the classes.
+{{ page.excerpt }}
 
-{% include toc-flammarion.md %}
+{% include toc.md %}
 
 ## The Extra Board
+
+Both **Proof-O-Work** and **Proof-O-Stack** are dynastic models eligible for severe corruption of the masses, if not the classes.
 
 Solving mathematical puzzles 24/7 will burn out a computer system fairly quickly.
 
@@ -24,6 +29,8 @@ When an entity is ready to perform work, does not the entity alert human resourc
 Human resources then places the entity on the list of eligible workers, first come, first serve.
 
 If in the event a block requires forging pronto, and the worker(s) at the top of the list are contacted as primary, secondary, and tertiary sources of immediate labor, if one cannot fulfill the task expediently, then the next is automatically and instantly alerted.
+
+### Shift Shape
 
 Once engaged, the shift begins to shape over a four (4) hour period of time.
 
@@ -95,10 +102,28 @@ Ambitious, corrupted, or simply deluded citizens who devote themselves to our fa
 
 Watch, therefore, for those who gild themselves with the appearance of a virtuous sense of obligation, via a commendable deference for public opinion, who with a laudable zeal for public good, defraud the base with foolish compliances of ambition, corruption, or infatuation.
 
+## Import Code
+
+More to come ...
+
+## Last Subtitle
+
+**Note**. The above synopsis was derived from a letter written by George Washington [[2](#GEORGE){:.red}].
+
+### Raw Code Block
+
+```liquid
+{% raw %}
+Enjoy the successful output!
+{% endraw %}
+```
+
 {% include sources-and-uses.md %}
+
+1. {:#GEORGE}The [Farewell Letter of George Washington](https://online.hillsdale.edu/home){:title='Click to Visit the Constitution page of Hillsdale College'}{:target="_blank"}, First President of the United States, September 19th, 1796. Published by © 2017 [Online.Hillsdale.edu](https://online.hillsdale.edu/home){:title='Click to Visit the Home Page of Hillsdale College'}{:target="_blank"}.
 
 ### External Sources
 
-- The [Project Source Links](https://mminail.github.io/Ether/Source-Ether-Links.htm){:title="Click to Visit the Source Links page of the Ether Lessons Project at GitHub pages"}{:target="_blank"}. Published by © 2017 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
+- {:#SOURCELINKS}The [Project Source Links](https://mminail.github.io/Ether/Source-Ether-Links.htm){:title='Click to Visit the Source Links page of the Ether Lessons Project at Concepts Library'}{:target='_blank'} page of the Ether Lessons Project at Concepts Library. Published by © 2017 - 2018 [Mminail.github.io](https://mminail.github.io/){:title='Click to Visit the Home Page of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation'}{:target='_blank'}.
 
-- [The Farewell Letter of George Washington, First President of the United States, September 19th, 1796](https://www.hillsdale-college.htm){:title="Click to Visit Hillsdale College Constitution Page"}{:target="_blank"). Published by © 2017 [HillsdaleCollege.com](https://www.hillsdale-college.htm){:title="Click to Visit Hillsdale College Home Page"}{:target="_blank"}.
+**Note**. This page crafted with {{ page.version }}.

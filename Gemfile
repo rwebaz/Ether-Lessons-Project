@@ -4,7 +4,7 @@ ruby "2.4.2"
 # ill-formed => gem 'ruby', '2.4.2'
 # Could not find gem 'ruby (= 2.4.2)'
 # In any of the gem sources listed in your Gemfile
-#
+# 
 # Date of this Update to Gem-template file ver 01-31-2018
 # 
 # Hello!

@@ -1,13 +1,16 @@
 ---
 title: Distributed Apps
 layout: default
-navigation_weight: 3
+excerpt: A Distributed App with access to the Ethereum network can authenticate without a Central Server ...
+version: Page Template md Dtd 02-10-18
+navigation_weight: 8
+categories: ethereum
 ---
-# Distributed Apps
+# {{ page.title }}
 
-A **Distributed App** with access to the Ethereum network can authenticate without a **Central Server**.
+{{ page.excerpt }}
 
-{% include toc-flammarion.md %}
+{% include toc.md %}
 
 ## Byte Code
 
@@ -30,12 +33,24 @@ Binary:
 {% endraw %}
 ```
 
-## Subtitle
+## Last Subtitle
+
+**Note**. The above synopsis was derived from an article written by Charles Jensen [[2](#CHARLESJENSEN){:.red}].
+
+### Raw Code Block
+
+```liquid
+{% raw %}
+Enjoy the successful output!
+{% endraw %}
+```
 
 {% include sources-and-uses.md %}
 
+1. {:#CHARLESJENSEN}The [Ultimate Guide to Blockchain](https://www.amazon.com){:title="Click to Visit the Ultimate Guide to Blockchain by Charles Jensen at Amazon"}{:target="_blank"} by Charles Jensen.
+
 ### External Sources
 
-- The [Project Source Links](https://mminail.github.io/Ether/Source-Ether-Links.htm){:title="Click to Visit the Source Links page of the Ether Lessons Project at GitHub pages"}{:target="_blank"} page of the Ether Lessons Project. Published by © 2017 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
+- The [Project Source Links](https://mminail.github.io/Ether/Source-Ether-Links.htm){:title="Click to Visit the Source Links page of the Ether Lessons Project at GitHub pages"}{:target="_blank"} page of the Ether Lessons Project. Published by © 2017 - 2018 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
 
-- The [Ultimate Guide to Blockchain by Charles Jensen](https://www.amazon.com){:title="Click to Visit the Ultimate Guide to Blockchain by Charles Jensen at Amazon"}{:target="_blank"}
+**Note**. This page crafted with {{ page.version }}.

@@ -1,21 +1,24 @@
 ---
 title: Minimum Gas
 layout: default
-navigation_weight: 5
+excerpt: Some methods executed over the Ethereum network cost more than others based on their op-code ...
+version: Page Template md Dtd 02-15-18
+navigation_weight: 8
+categories: template
 ---
-# Minimum Gas
+# {{ page.title }}
+
+{{ page.excerpt }}
+
+{% include toc.md %}
+
+## Op Codes
 
 The minimum amount of `gas` required by the **Ethereum** network to execute a *smart contract* ...
 
 That will transfer funds ...
 
 Is currently set at twenty-one thousand (21,000) `gas` units plus the value of all other resident *op-code* functions used by your contract, if any.
-
-{% include toc-flammarion.md %}
-
-## Op Codes
-
-Some methods executed over the **Ethereum** network cost more than others based on their *op-code*.
 
 The fee schedule per *op-code* expressed in units of `gas` is set annually by the directors of the **Ethereum** foundation and is also subject to change.
 
@@ -140,20 +143,28 @@ You may contact us through our Facebook page at [Medcoin™](https://fb.me/medco
 
 More to come ...
 
+## Import Code
+
+More to come ...
+
 ## Last Subtitle
 
-Place the introducing line of text ie.) the 'tagline' here ...
+**Note**. The above synopsis was derived from an article written by Robert Lie [[2](#LIE){:.red}].
+
+### Raw Code Block
 
 ```liquid
 {% raw %}
-Place code here
+Enjoy the successful output!
 {% endraw %}
 ```
 
 {% include sources-and-uses.md %}
 
+1. {:#LIE}Solving the [Ethereum Gas Puzzle](https://youtu.be/yFb2nuUUDX0){:title="Click to Review how the Ethereum Network Sets Its Minimum and Maximum Gas Limits via You Tube"}{:target="_blank"} by Robert Lie of Zaandam, the Netherlands (NL). Published by © 2017 [Mobilefish.com](https://www.mobilefish.com){:title="Click to Visit the Home Page of Mobile Fish dot com"}{:target="_blank"}.
+
 ### External Sources
 
-- The [Project Source Links](https://mminail.github.io/Ether/Source-Ether-Links.htm){:title="Click to Visit the Source Links page of the Ether Lessons Project at GitHub pages"}{:target="_blank"} page of the Ether Lessons Project. Published by © 2017 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
+- {:#SOURCELINKS}The [Project Source Links](https://mminail.github.io/Ether/Source-Ether-Links.htm){:title="Click to Visit the Source Links page of the Ether Lessons Project at GitHub pages"}{:target="_blank"} page of the Ether Lessons Project. Published by © 2017 - 2018 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
 
-- Solving the [Ethereum Gas Puzzle](https://youtu.be/yFb2nuUUDX0){:title="Click to Review how the Ethereum Network Sets Its Minimum and Maximum Gas Limits via You Tube"}{:target="_blank"} by Robert Lie of Zaandam, the Netherlands (NL). Published by © 2017 [Mobilefish.com](https://www.mobilefish.com){:title="Click to Visit the Home Page of Mobile Fish dot com"}{:target="_blank"}.
+**Note**. This page crafted with {{ page.version }}.

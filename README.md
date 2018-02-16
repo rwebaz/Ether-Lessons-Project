@@ -1,3 +1,3 @@
 # Ether Lessons Project
 
-A Git Hub repo of Ether Lessons
+A GitHub repo of Lessons and Articles that emphasize the GETH and Solidity blockchain development engine ...

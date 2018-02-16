@@ -1,13 +1,16 @@
 ---
 title: Pocket Guide
 layout: default
-navigation_weight: 7
+excerpt: A simple Ethereum pocket guide for new comers, novice users, and traders ...
+version: Page Template md Dtd 02-15-18
+navigation_weight: 8
+categories: ethereum
 ---
-# Pocket Guide
+# {{ page.title }}
 
-A simple **Ethereum** pocket guide for new comers, novice users, and traders.
+{{ page.excerpt }}
 
-{% include toc-flammarion.md %}
+{% include toc.md %}
 
 ## The Ethereum Platform
 
@@ -441,3 +444,27 @@ A special thanks to all those who provided feedback and helped out with this and
 - [Troll Zone](https://reddit.com/r/Ethereum){:title="Click to Visit the ..."}{:target="_blank"}.
 - [Troll Zone for Traders](https://reddit.com/r/EthTrader){:title="Click to Visit the ..."}{:target="_blank"}.
 - [Troll Zone for Developers](https://reddit.com/r/EthDev){:title="Click to Visit the ..."}{:target="_blank"}.
+
+## Import Code
+
+More to come ...
+
+## Last Subtitle
+
+**Note**. The above synopsis was derived from an article written by Blank [[2](#BLANK){:.red}].
+
+### Raw Code Block
+
+```liquid
+{% raw %}
+Enjoy the successful output!
+{% endraw %}
+```
+
+{% include sources-and-uses.md %}
+
+### External Sources
+
+- {:#SOURCELINKS}The [Project Source Links](https://mminail.github.io/Ether/Source-Ether-Links.htm){:title='Click to Visit the Source Links page of the Ether Lessons Project at GitHub pages'}{:target='_blank'} page of the Ether Lessons Project. Published by © 2017 - 2018 [Mminail.github.io](https://mminail.github.io/){:title='Click to Visit the Home Page of the Concept Library at the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation'}{:target='_blank'}.
+
+**Note**. This page crafted with {{ page.version }}.

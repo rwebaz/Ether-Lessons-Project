@@ -1,17 +1,20 @@
 ---
 title: Kick v Ether 
 layout: default
-navigation_weight: 6
+excerpt: The Kick coin is an ERC-20 crypto currency ...
+version: Page Template md Dtd 02-10-18
+navigation_weight: 8
+categories: template
 ---
-# Kick v Ether
+# {{ page.title }}
 
-(1) KICK = 0.0005 ETH, or 5 ten-thousandth's of an ether, commonly known as a "unknown".
+{{ page.excerpt }}
 
-{% include toc-flammarion.md %}
+{% include toc.md %}
 
 ## ERC-20 Standard
 
-The **KICK** coin is an ERC-20 crypto currency.
+(1) KICK = 0.0005 ETH, or 5 ten-thousandth's of an ether, commonly known as a "unknown".
 
 ### Fungibility
 
@@ -113,10 +116,28 @@ Burn, baby, burn!
 
 Now, THAT's a disco inferno!
 
+## Import Code
+
+More to come ...
+
+## Last Subtitle
+
+**Note**. The above synopsis was derived from an article written by Chimera Labs [[2](#CHIMERA){:.red}].
+
+### Raw Code Block
+
+```liquid
+{% raw %}
+Enjoy the successful output!
+{% endraw %}
+```
+
 {% include sources-and-uses.md %}
+
+1. {:#CHIMERA}[Mastering Bitcoin](https://www.chimera.labs.oreilly.com){:title="Click to Visit Chimera Labs"}{:target="_blank"} by Chimera Labs. Published by © 2017 [Oreilly.com](https://www.oreilly.com){:title="Click to Visit O'reilly dot com ..."}{:target="_blank"}.
 
 ### External Sources
 
-- The [Project Source Links](https://mminail.github.io/Medcoin/Source-Medcoin-Links.htm){:title="Click to Visit the Source Links page of the Medcoin Lessons Project at GitHub pages"}{:target="_blank"} page of the Medcoin Lessons Project. Published by © 2017 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
+- The [Project Source Links](https://mminail.github.io/Medcoin/Source-Medcoin-Links.htm){:title="Click to Visit the Source Links page of the Medcoin Lessons Project at GitHub pages"}{:target="_blank"} page of the Medcoin Lessons Project. Published by © 2017 - 2018 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
 
-- [Mastering Bitcoin by Chimera Labs](https://www.chimera.labs.oreilly.com){:title="Click to Visit Chimera Labs"}{:target="_blank"}. Published by © 2017 [Oreilly.com](https://www.oreilly.com){:title="Click to Visit Oreilly dot com ..."}{:target="_blank"}.
+**Note**. This page crafted with {{ page.version }}.
