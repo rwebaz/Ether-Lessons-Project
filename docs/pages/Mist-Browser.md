@@ -1,17 +1,16 @@
 ---
 title: Mist Browser
 layout: default
-navigation_weight: 5
+excerpt: The string below your account name is your account address ...
+version: Page Template md Dtd 02-15-18
+navigation_weight: 8
+categories: ethereum
 ---
-# Mist Browser
+# {{ page.title }}
 
-Place the introducing line of text ie.) the 'tagline' here ...
+{{ page.excerpt }}
 
-{% include toc-flammarion.md %}
-
-## Subtitle
-
-Place the introducing line of text ie.) the 'tagline' here ...
+{% include toc.md %}
 
 ## Mist Wallet
 
@@ -21,7 +20,7 @@ Download the latest release of mist wallet.
 
 After you launch, you’ll see this:
 
-Installing The Wallet
+### Installing The Wallet
 
 Once the node is fully synced, you’ll be asked to choose the network.
 
@@ -33,7 +32,7 @@ Choose Your Password wisely because you cannot change the password of this type 
 
 **Note**. Protect your account with a strong password from [Last Pass](){:title=Click to Visit the ..."}{:target="_blank"}
 
-Your Account
+### Your Account
 
 Ethereum Mist Wallet Accounts Overview
 
@@ -125,8 +124,26 @@ Go to the profile of Attores Pte Ltd
 
 - [ETH-Ethereum-Mist-Wallet-by-Nick-Dodson]
 
+## Import Code
+
+More to come ...
+
+## Last Subtitle
+
+**Note**. The above synopsis was derived from an article written by Blank [[2](#BLANK){:.red}].
+
+### Raw Code Block
+
+```liquid
+{% raw %}
+Enjoy the successful output!
+{% endraw %}
+```
+
 {% include sources-and-uses.md %}
 
 ### External Sources
 
-- The [Project Source Links](https://mminail.github.io/Ether/Source-Ether-Links.htm){:title="Click to Visit the Source Links page of the Ether Lessons Project at GitHub pages"}{:target="_blank"} page of the Ether Lessons Project. Published by © 2017 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
+- {:#SOURCELINKS}The [Project Source Links](https://mminail.github.io/Ether/Source-Ether-Links.htm){:title="Click to Visit the Source Links page of the Ether Lessons Project at GitHub pages"}{:target="_blank"} page of the Ether Lessons Project. Published by © 2017 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
+
+**Note**. This page crafted with {{ page.version }}.

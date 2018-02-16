@@ -1,13 +1,16 @@
 ---
 title: Ethereum Mist
 layout: default
-navigation_weight: 4
+excerpt: Mist is the official Ethereum crypto currency operating wallet ...
+version: Page Template md Dtd 02-10-18
+navigation_weight: 8
+categories: ethereum
 ---
-# Ethereum Mist
+# {{ page.title }}
 
-**Mist** is the official Ethereum crypto currency Operating wallet.
+{{ page.excerpt }}
 
-{% include toc-flammarion.md %}
+{% include toc.md %}
 
 ## Aleth Zero
 
@@ -150,7 +153,9 @@ Any takers?
 
 ## Last Subtitle
 
-Place the introducing line of text ie.) the 'tagline' here ...
+**Note**. The above synopsis was derived from an article written by Charles Jensen [[2](#BLOCKCHAIN){:.red}].
+
+### Raw Code Block
 
 ```liquid
 {% raw %}
@@ -160,8 +165,10 @@ Enjoy the successful output!
 
 {% include sources-and-uses.md %}
 
+1. {:#BLOCKCHAIN}The [Block Chain: Understanding Financial Technology](https://www.amazon.com/){:title="Click to Visit Block Chain: Understanding Financial Technology by Charles Jensen at Amazon"}{:target="_blank"} by Charles Jensen. Self-published by © 2017 [Charles Jensen](https://www.amazon.com/){:title="Click to Visit Block Chain: Understanding Financial Technology by Charles Jensen at Amazon"}{:target="_blank"}.
+
 ### External Sources
 
-- [Project Source Links](https://mminail.github.io/Medcoin/Source-Medcoin-Links.htm){:title="Click to Visit the Medcoin™ Crypto Currency Project Source Links Page"}{:target="_blank"). Published by © 2017 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
+- {:#SOURCELINKS}The [Project Source Links](https://mminail.github.io/Ether/Source-Ether-Links.htm){:title='Click to Visit the Source Links page of the Ether Lessons Project at Concepts Library'}{:target='_blank'} page of the Ether Lessons Project at Concepts Library. Published by © 2017 - 2018 [Mminail.github.io](https://mminail.github.io/){:title='Click to Visit the Concepts Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target='_blank'}.
 
-- [Block Chain: Understanding Financial Technology by Charles Jensen](https://www.amazon.com/){:title="Click to Visit Block Chain: Understanding Financial Technology by Charles Jensen at Amazon"}{:target="_blank"). Self-published by © 2017 [Charles Jensen](https://www.amazon.com/){:title="Click to Visit Block Chain: Understanding Financial Technology by Charles Jensen at Amazon"}{:target="_blank"}.
+**Note**. This page crafted with {{ page.version }}.

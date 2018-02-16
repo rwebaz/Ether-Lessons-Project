@@ -1,13 +1,16 @@
 ---
 title: Check Sum
 layout: default
-navigation_weight: 2
+excerpt: Affirming a download via Check Sum is a smart move ...
+version: Page Template md Dtd 02-10-18
+navigation_weight: 8
+categories: template
 ---
-# Check Sum
+# {{ page.title }}
 
-Affirming a download via **Check Sum** is a smart move.
+{{ page.excerpt }}
 
-{% include toc-flammarion.md %}
+{% include toc.md %}
 
 ## Hash v Hash
 
@@ -109,4 +112,6 @@ The installer program ( .dmg ) will check the sum of the program downloaded to m
 
 ### External Sources
 
-- The [Project Source Links](https://mminail.github.io/Ether/Source-Ether-Links.htm){:title="Click to Visit the Source Links page of the Ether Lessons Project at GitHub pages"}{:target="_blank"} page of the Ether Lessons Project. Published by © 2017 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
+- The [Project Source Links](https://mminail.github.io/Ether/Source-Ether-Links.htm){:title="Click to Visit the Source Links page of the Ether Lessons Project at GitHub pages"}{:target="_blank"} page of the Ether Lessons Project. Published by © 2017 - 2018 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
+
+**Note**. This page crafted with {{ page.version }}.
