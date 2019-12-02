@@ -2,17 +2,17 @@
 title: Pocket Guide
 layout: default
 excerpt: A simple Ethereum pocket guide for new comers, novice users, and traders ...
-version: Page Template md Dtd 02-15-18
+hint: Place the intro paragraph ie.) the 'hypothesis' here ...
+repo: Ether-Lessons-Project
+ver_date: 11-26-19
 navigation_weight: 8
-categories: ethereum
+categories: page
 ---
-# {{ page.title }}
-
-{{ page.excerpt }}
-
 {% include toc.md %}
 
 ## The Ethereum Platform
+
+> **Hint**. {{ page.hint }}
 
 This simple beginner’s guide is to help those just coming to **Ethereum** for the first time.
 
@@ -402,69 +402,44 @@ A special thanks to all those who provided feedback and helped out with this and
 {% endraw %}
 ```
 
-- [Nick Dodson, Author](https://mobile.twitter.com/IAmNickDodson){:title="Click to Visit the ..."}{:target="_blank"}.
-
-{% include sources-and-uses.md %}
-
-### External Sources
-
-- The [Project Source Links](https://mminail.github.io/Ether/Source-Ether-Links.htm){:title="Click to Visit the Source Links page of the Ether Lessons Project at GitHub pages"}{:target="_blank"}. Published by © 2017 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
-
-### The Ethereum Community
-
-- [Ethereum Forum](https://forum.ethereum.org){:title="Click to Visit the ..."}{:target="_blank"}.
-- [Ethereum Creator: Vitalik Buterin](https://twitter.com/VitalikButerin){:title="Click to Visit the ..."}{:target="_blank"}.
-- [Ethereum Foundation](https://twitter.com/ethereumproject){:title="Click to Visit the ..."}{:target="_blank"}.
-- [Ethereum News](https://twitter.com/ETHNews_){:title="Click to Visit the ..."}{:target="_blank"}.
-
-### Mr Technical
-
-- [Mr. Technical #1](https://twitter.com/LefterisJP){:title="Click to Visit the ..."}{:target="_blank"}.
-- [Mr. Technical #2](https://twitter.com/peter_szilagyi){:title="Click to Visit the ..."}{:target="_blank"}.
-
-### Ethereum News
-
-- [More News #1](https://twitter.com/ethereumreport){:title="Click to Visit the ..."}{:target="_blank"}.
-- [More News #2](https://twitter.com/EthereumNetw){:title="Click to Visit the ..."}{:target="_blank"}.
-
-### Meta Mask
-
-- [MetaMask](https://twitter.com/metamask_io){:title="Click to Visit the ..."}{:target="_blank"}.
-
-### Mr Token
-
-- [Mr. Token](https://twitter.com/simondlr){:title="Click to Visit the ..."}{:target="_blank"}.
-
-### My Ether Wallet
-
-- [MyEtherWallet](https://twitter.com/myetherwallet){:title="Click to Visit the ..."}{:target="_blank"}.
-
-### Troll Zone
-
-- [Troll Zone](https://reddit.com/r/Ethereum){:title="Click to Visit the ..."}{:target="_blank"}.
-- [Troll Zone for Traders](https://reddit.com/r/EthTrader){:title="Click to Visit the ..."}{:target="_blank"}.
-- [Troll Zone for Developers](https://reddit.com/r/EthDev){:title="Click to Visit the ..."}{:target="_blank"}.
-
-## Import Code
+## Last Subtitle
 
 More to come ...
 
-## Last Subtitle
+***
 
-**Note**. The above synopsis was derived from an article written by Blank [[2](#BLANK){:.red}].
+**Note**. The above synopsis was derived from an article written by Nick Dodson [[1](#NICKDODSON){:.red}].
 
-### Raw Code Block
+1. {:#NICKDODSON}[Nick Dodson, Author](https://mobile.twitter.com/IAmNickDodson){:title="Click to Visit the Nick Dodson Web Page"}{:target="_blank"}.
 
-```liquid
-{% raw %}
-Enjoy the successful output!
-{% endraw %}
-```
+1. {:#NICKDODSON}[Ethereum Forum](https://forum.ethereum.org){:title="Click to Visit the ..."}{:target="_blank"}.
 
-{% include sources-and-uses.md %}
+1. {:#NICKDODSON}[Ethereum Creator: Vitalik Buterin](https://twitter.com/VitalikButerin){:title="Click to Visit the ..."}{:target="_blank"}.
 
-### External Sources
+1. {:#NICKDODSON}[Ethereum Foundation](https://twitter.com/ethereumproject){:title="Click to Visit the ..."}{:target="_blank"}.
 
-- {:#SOURCELINKS}The [Project Source Links](https://mminail.github.io/Ether/Source-Ether-Links.htm){:title='Click to Visit the Source Links page of the Ether Lessons Project at GitHub pages'}{:target='_blank'} page of the Ether Lessons Project. Published by © 2017 - 2018 [Mminail.github.io](https://mminail.github.io/){:title='Click to Visit the Home Page of the Concept Library at the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation'}{:target='_blank'}.
+1. {:#NICKDODSON}[Ethereum News](https://twitter.com/ETHNews_){:title="Click to Visit the ..."}{:target="_blank"}.
 
-**Note**. This page crafted with {{ page.version }}.
+1. {:#NICKDODSON}[Mr. Technical #1](https://twitter.com/LefterisJP){:title="Click to Visit the ..."}{:target="_blank"}.
+
+1. {:#NICKDODSON}[Mr. Technical #2](https://twitter.com/peter_szilagyi){:title="Click to Visit the ..."}{:target="_blank"}.
+
+1. {:#NICKDODSON}[More News #1](https://twitter.com/ethereumreport){:title="Click to Visit the ..."}{:target="_blank"}.
+
+1. {:#NICKDODSON}[More News #2](https://twitter.com/EthereumNetw){:title="Click to Visit the ..."}{:target="_blank"}.
+
+1. {:#NICKDODSON}[MetaMask](https://twitter.com/metamask_io){:title="Click to Visit the ..."}{:target="_blank"}.
+
+1. {:#NICKDODSON}[Mr. Token](https://twitter.com/simondlr){:title="Click to Visit the ..."}{:target="_blank"}.
+
+1. {:#NICKDODSON}[MyEtherWallet](https://twitter.com/myetherwallet){:title="Click to Visit the ..."}{:target="_blank"}.
+
+1. {:#NICKDODSON}[Troll Zone](https://reddit.com/r/Ethereum){:title="Click to Visit the ..."}{:target="_blank"}.
+
+1. {:#NICKDODSON}[Troll Zone for Traders](https://reddit.com/r/EthTrader){:title="Click to Visit the ..."}{:target="_blank"}.
+
+1. {:#NICKDODSON}[Troll Zone for Developers](https://reddit.com/r/EthDev){:title="Click to Visit the ..."}{:target="_blank"}.
+
+***
+
+{% include patreon-link.md %}

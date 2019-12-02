@@ -2,19 +2,17 @@
 title: Check Sum
 layout: default
 excerpt: Affirming a download via Check Sum is a smart move ...
-version: Page Template md Dtd 02-10-18
+hint: Watch for the long "hash" number at the end of the check sum.
+repo: Ether-Lessons-Project
+ver_date: 11-26-19
 navigation_weight: 8
-categories: template
+categories: page
 ---
-# {{ page.title }}
-
-{{ page.excerpt }}
-
 {% include toc.md %}
 
 ## Hash v Hash
 
-Watch for the long "hash" number at the end of the check sum.
+> **Hint**. {{ page.hint }}
 
 Just match it up against the published "hash" number for that particular software download, and if the "hash" match, you should be good to go!
 
@@ -106,12 +104,16 @@ Alternatively, you can also just download the Ethereum "soft" wallet from the ma
 
 The installer program ( .dmg ) will check the sum of the program downloaded to make sure it has not been hacked in transit in the open.
 
-{% include sources-and-uses.md %}
+## Last Subtitle
 
-1. {:#Ethereum}The [Ethereum](https://www.ethereum.org/){:title="Click to Visit the Ethereum Project at Ethereum dot org"}{:target="_blank"} project. Published by © 2017 [Ethereum.org](https://www.ethereum.org/){:title="Click to Visit the Ethereum Project at Ethereum dot org"}{:target="_blank"}
+More to come ...
 
-### External Sources
+***
 
-- The [Project Source Links](https://mminail.github.io/Ether/Source-Ether-Links.htm){:title="Click to Visit the Source Links page of the Ether Lessons Project at GitHub pages"}{:target="_blank"} page of the Ether Lessons Project. Published by © 2017 - 2018 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
+**Note**. The above synopsis was derived from an article written by the Ethereum Project [[1](#ETHEREUMPROJECT){:.red}].
 
-**Note**. This page crafted with {{ page.version }}.
+1. {:#ETHEREUMPROJECT}The [Ethereum](https://www.ethereum.org/){:title="Click to Visit the Ethereum Project at Ethereum dot org"}{:target="_blank"} project. Published by © 2017 [Ethereum.org](https://www.ethereum.org/){:title="Click to Visit the Ethereum Project at Ethereum dot org"}{:target="_blank"}
+
+***
+
+{% include patreon-link.md %}

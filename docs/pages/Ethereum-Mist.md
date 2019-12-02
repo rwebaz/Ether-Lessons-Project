@@ -2,19 +2,19 @@
 title: Ethereum Mist
 layout: default
 excerpt: Mist is the official Ethereum crypto currency operating wallet ...
-version: Page Template md Dtd 02-10-18
+hint: Aleth Zero is an implementation of Ethereum for developers that has been written in C++.
+repo: Ether-Lessons-Project
+ver_date: 11-26-19
 navigation_weight: 8
-categories: ethereum
+categories: page
 ---
-# {{ page.title }}
-
-{{ page.excerpt }}
-
 {% include toc.md %}
 
 ## Aleth Zero
 
-**Aleth Zero** is an implementation of Ethereum for developers that has been written in C++
+> **Hint**. {{ page.hint }}
+
+More to come ...
 
 ## Solidity
 
@@ -153,22 +153,14 @@ Any takers?
 
 ## Last Subtitle
 
+More to come ...
+
+***
+
 **Note**. The above synopsis was derived from an article written by Charles Jensen [[2](#BLOCKCHAIN){:.red}].
-
-### Raw Code Block
-
-```liquid
-{% raw %}
-Enjoy the successful output!
-{% endraw %}
-```
-
-{% include sources-and-uses.md %}
 
 1. {:#BLOCKCHAIN}The [Block Chain: Understanding Financial Technology](https://www.amazon.com/){:title="Click to Visit Block Chain: Understanding Financial Technology by Charles Jensen at Amazon"}{:target="_blank"} by Charles Jensen. Self-published by © 2017 [Charles Jensen](https://www.amazon.com/){:title="Click to Visit Block Chain: Understanding Financial Technology by Charles Jensen at Amazon"}{:target="_blank"}.
 
-### External Sources
+***
 
-- {:#SOURCELINKS}The [Project Source Links](https://mminail.github.io/Ether/Source-Ether-Links.htm){:title='Click to Visit the Source Links page of the Ether Lessons Project at Concepts Library'}{:target='_blank'} page of the Ether Lessons Project at Concepts Library. Published by © 2017 - 2018 [Mminail.github.io](https://mminail.github.io/){:title='Click to Visit the Concepts Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target='_blank'}.
-
-**Note**. This page crafted with {{ page.version }}.
+{% include patreon-link.md %}
