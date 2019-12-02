@@ -2,17 +2,21 @@
 title: Passing Hash
 layout: default
 excerpt: Have you ever wanted to learn how to transfer ether ...
-version: Page Template md Dtd 02-15-18
+hint: Place the intro paragraph ie.) the 'hypothesis' here ...
+repo: Ether-Lessons-Project
+ver_date: 11-26-19
 navigation_weight: 8
-categories: ethereum
+categories: page
 ---
-# {{ page.title }}
-
-{{ page.excerpt }}
-
 {% include toc.md %}
 
-## How to GETH in Mac Os High Sierra
+## How to GETH
+
+> **Hint**. {{ page.hint }}
+
+More to come ...
+
+### How to GETH in Mac Os High Sierra
 
 To transfer *ether* over the Ethereum platform, you must first learn how to *GETH*.
 
@@ -1090,28 +1094,16 @@ eth.getBalance(eth.accounts[2])
 {% endraw %}
 ```
 
-## Import Code
+## Last Subtitle
 
 More to come ...
 
-## Last Subtitle
+***
 
 **Note**. The above synopsis was derived from an article written by Newline [[2](#NEWLINE){:.red}].
 
-### Raw Code Block
-
-```liquid
-{% raw %}
-Enjoy the successful output!
-{% endraw %}
-```
-
-{% include sources-and-uses.md %}
-
 1. {:#NEWLINE}Code lines courtesy of [Newline dot co](https://www.newline.co/courses/intro-to-programming-ethereum-dapps/){:title="Click to Visit the Newline dot co library of Ethereum lessons"}{:target="_blank"}. Published by © 2017 [Newline.co](https://www.newline.co/){:title="Click to Visit the Home Page of Newline dot co"}{:target="_blank"}.
 
-### External Sources
+***
 
-- The [Project Source Links](https://mminail.github.io/Ether/Source-Ether-Links.htm){:title="Click to Visit the Source Links page of the Ether Lessons Project at GitHub pages"}{:target="_blank"} page of the Ether Lessons Project. Published by © 2017 - 2018 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
-
-**Note**. This page crafted with {{ page.version }}.
+{% include patreon-link.md %}

@@ -2,19 +2,17 @@
 title: Proof O Shift
 layout: default
 excerpt: Once engaged the shift begins to shape over a four (4) hour period of time ...
-version: Page Template md Dtd 02-15-18
+hint: Both Proof-O-Work and Proof-O-Stack are dynastic models eligible for severe corruption of the masses, if not the classes.
+repo: Ether-Lessons-Project
+ver_date: 11-26-19
 navigation_weight: 8
-categories: ethereum
+categories: page
 ---
-# {{ page.title }}
-
-{{ page.excerpt }}
-
 {% include toc.md %}
 
 ## The Extra Board
 
-Both **Proof-O-Work** and **Proof-O-Stack** are dynastic models eligible for severe corruption of the masses, if not the classes.
+> **Hint**. {{ page.hint }}
 
 Solving mathematical puzzles 24/7 will burn out a computer system fairly quickly.
 
@@ -102,28 +100,16 @@ Ambitious, corrupted, or simply deluded citizens who devote themselves to our fa
 
 Watch, therefore, for those who gild themselves with the appearance of a virtuous sense of obligation, via a commendable deference for public opinion, who with a laudable zeal for public good, defraud the base with foolish compliances of ambition, corruption, or infatuation.
 
-## Import Code
+## Last Subtitle
 
 More to come ...
 
-## Last Subtitle
+***
 
-**Note**. The above synopsis was derived from a letter written by George Washington [[2](#GEORGE){:.red}].
-
-### Raw Code Block
-
-```liquid
-{% raw %}
-Enjoy the successful output!
-{% endraw %}
-```
-
-{% include sources-and-uses.md %}
+**Note**. The above synopsis was derived from a letter written by George Washington [[1](#GEORGE){:.red}].
 
 1. {:#GEORGE}The [Farewell Letter of George Washington](https://online.hillsdale.edu/home){:title='Click to Visit the Constitution page of Hillsdale College'}{:target="_blank"}, First President of the United States, September 19th, 1796. Published by © 2017 [Online.Hillsdale.edu](https://online.hillsdale.edu/home){:title='Click to Visit the Home Page of Hillsdale College'}{:target="_blank"}.
 
-### External Sources
+***
 
-- {:#SOURCELINKS}The [Project Source Links](https://mminail.github.io/Ether/Source-Ether-Links.htm){:title='Click to Visit the Source Links page of the Ether Lessons Project at Concepts Library'}{:target='_blank'} page of the Ether Lessons Project at Concepts Library. Published by © 2017 - 2018 [Mminail.github.io](https://mminail.github.io/){:title='Click to Visit the Home Page of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation'}{:target='_blank'}.
-
-**Note**. This page crafted with {{ page.version }}.
+{% include patreon-link.md %}

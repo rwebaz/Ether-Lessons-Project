@@ -2,17 +2,17 @@
 title: Mist Browser
 layout: default
 excerpt: The string below your account name is your account address ...
-version: Page Template md Dtd 02-15-18
+hint: Place the intro paragraph ie.) the 'hypothesis' here ...
+repo: Ether-Lessons-Project
+ver_date: 11-26-19
 navigation_weight: 8
-categories: ethereum
+categories: page
 ---
-# {{ page.title }}
-
-{{ page.excerpt }}
-
 {% include toc.md %}
 
 ## Mist Wallet
+
+> **Hint**. {{ page.hint }}
 
 Download the latest release of mist wallet.
 
@@ -29,8 +29,6 @@ Choose "test" network
 Choose your password:
 
 Choose Your Password wisely because you cannot change the password of this type of account once it’s created.
-
-**Note**. Protect your account with a strong password from [Last Pass](){:title=Click to Visit the ..."}{:target="_blank"}
 
 ### Your Account
 
@@ -114,7 +112,7 @@ P.S. Check out Indorse by Attores — LinkedIn Disruptor on Ethereum
 
 - [Indorse Slack]: Join Indorse Community on Slack
 
-- (S-C-aa-S)[Smart Contracts as a Service  platform = SCaaS] 
+- [S-C-aa-S]: Smart Contracts as a Service  platform = SCaaS
 
 ## Attores Pte Ltd
 
@@ -124,26 +122,16 @@ Go to the profile of Attores Pte Ltd
 
 - [ETH-Ethereum-Mist-Wallet-by-Nick-Dodson]
 
-## Import Code
+## Last Subtitle
 
 More to come ...
 
-## Last Subtitle
+***
 
-**Note**. The above synopsis was derived from an article written by Blank [[2](#BLANK){:.red}].
+**Note**. The above synopsis was derived from an article written by Blank Author [[1](#BLANKAUTHOR){:.red}].
 
-### Raw Code Block
+1. {:#BLANKAUTHOR}[A Narrative of Psychology by Blank Author, Jan #1999](http://cowles.yale.edu/sites/default/files/files/pub/d20/d2069.pdf){:title="Click to Review ..."}{:target="_blank"}
 
-```liquid
-{% raw %}
-Enjoy the successful output!
-{% endraw %}
-```
+***
 
-{% include sources-and-uses.md %}
-
-### External Sources
-
-- {:#SOURCELINKS}The [Project Source Links](https://mminail.github.io/Ether/Source-Ether-Links.htm){:title="Click to Visit the Source Links page of the Ether Lessons Project at GitHub pages"}{:target="_blank"} page of the Ether Lessons Project. Published by © 2017 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
-
-**Note**. This page crafted with {{ page.version }}.
+{% include patreon-link.md %}
